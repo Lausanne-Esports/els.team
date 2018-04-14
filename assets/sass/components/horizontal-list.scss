@@ -1,0 +1,68 @@
+@import '~/assets/sass/core/variables.scss';
+
+.horizontal-list {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  .item {
+      display: inline-block;
+      padding: 20px 15px;
+      width: 100%;
+
+      &.match-item {
+          height: 180px;
+          text-transform: uppercase;
+          color: $white;
+          border-top: 1px solid $dark-purple-blue;
+          border-bottom: 3px solid $blue;
+          background: $darker-blue;
+
+          .infos {
+              width: 100%;
+              font-size: 13px;
+              font-weight: bold;
+
+              .game {
+                  margin-right: 5px;
+                  font-size: 24px;
+                  color: $blue;
+              }
+
+              .event {
+                  line-height: 14px;
+
+                  i {
+                      color: $blue;
+                  }
+              }
+
+              .date {
+                  color: $dark-purple-blue;
+              }
+          }
+
+          .result {
+              margin: 0 15px;
+              padding-top: 15px;
+
+              .score {
+                  font-size: 13px;
+                  color: $dark-purple-blue;
+
+                  .big {
+                      padding: 0px 5px;
+                      font-size: 20px;
+                      font-weight: bold;
+                      color: $white;
+                  }
+              }
+          }
+
+          .bottom-icon {
+              margin-top: 10px;
+              font-size: 12px;
+              color: $dark-purple-blue;
+          }
+      }
+  }
+}

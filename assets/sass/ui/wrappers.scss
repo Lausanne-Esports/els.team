@@ -1,0 +1,11 @@
+@import '~/assets/sass/core/variables.scss';
+
+.wrapper {
+  &.blue {
+      background: $blue;
+  }
+
+  &.dark-blue {
+      background: $dark-blue;
+  }
+}

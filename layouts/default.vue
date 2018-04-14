@@ -19,7 +19,8 @@ export default {
   @import '~/node_modules/bootstrap/scss/bootstrap-reboot.scss';
   @import '~/node_modules/bootstrap/scss/_utilities.scss';
   @import '~/node_modules/bootstrap/scss/_grid.scss';
-  @import '~/assets/sass/variables.scss';
+  @import '~/assets/sass/core/variables.scss';
+  @import '~/assets/sass/ui/wrappers.scss';
 
   * {
     font-family: 'Barlow', Arial, sans-serif;

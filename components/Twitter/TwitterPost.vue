@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '~/assets/sass/variables.scss';
+  @import '~/assets/sass/core/variables.scss';
 
   .twitter-feed-item {
     display: block;

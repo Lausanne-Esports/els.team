@@ -2,9 +2,8 @@
   <section id="headlines-wrapper" class="wrapper dark-blue">
     <div class="headlines container d-flex">
       <els-featured-article />
+      <els-twitter-feed />
     </div>
-
-    <els-twitter-feed />
   </section>
 </template>
 
@@ -22,7 +21,7 @@ export default {
 
 
 <style lang="scss" scoped>
-  @import '~/assets/sass/variables.scss';
+  @import '~/assets/sass/core/variables.scss';
 
   #headlines-wrapper {
     padding-top: 290px;

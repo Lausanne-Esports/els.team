@@ -29,7 +29,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '~/assets/sass/variables.scss';
+  @import '~/assets/sass/core/variables.scss';
 
   .main {
     background: url('~/assets/images/header_bg.jpg') top center;
