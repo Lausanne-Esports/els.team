@@ -7,13 +7,16 @@
       </div>
       <div class="row">
         <div class="col-md-4 ">
-          <a class="article featured" href="#">
-            <div class="thumbnail" style="background-image: url(https://pbs.twimg.com/media/DQJrwTxX0AAZdVK.jpg:large);" />
+          <a class="article featured" :href="featured.link">
+            <div
+              class="thumbnail"
+              :style="{ backgroundImage: 'url(' + featured.thumbnail + ')' }"
+            />
             <div class="body">
               <div class="title">
-                <div class="category"><i class="icon-lol" /> Résultats</div>
-                <h3>Double titre national pour Lausanne-Sport eSports !</h3>
-                <p class="date">22 jan 13h37</p>
+                <div class="category"><i class="icon-lol" /> {{ featured.category.name }}</div>
+                <h3>{{ featured.title }}</h3>
+                <p class="date">{{ featured.date }}</p>
               </div>
               <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
             </div>
