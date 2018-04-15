@@ -51,6 +51,9 @@ export default {
     return {
       games: [
         {
+          value: 'Tous les jeux',
+        },
+        {
           value: 'Counter-Strike : Global Offensive',
         },
         {
@@ -146,9 +149,6 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-  @import "~/assets/sass/layouts/sections.scss";
-</style>
 
 <style lang="scss" scoped>
   @import "~/assets/sass/components/horizontal-list.scss";

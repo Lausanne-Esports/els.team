@@ -1,5 +1,5 @@
 <template>
-  <div class="item">{{ value }}</div>
+  <div class="item" @click="onItemClick">{{ value }}</div>
 </template>
 <script>
 export default {
@@ -10,6 +10,11 @@ export default {
     },
   },
   components: {
+  },
+  methods: {
+    onItemClick () {
+      this.$emit('item', { value: this.value })
+    },
   },
 }
 </script>

@@ -1,0 +1,133 @@
+@import '~/assets/sass/core/variables.scss';
+
+.articles {
+  .article {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    height: 380px;
+    background: $white;
+
+    .thumbnail {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .category {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      padding: 5px 10px;
+      top: 0px;
+      left: 0px;
+      color: $white;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: $blue;
+
+      i {
+        margin-right: 5px;
+        font-size: 18px;
+      }
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px 30px;
+      height: 160px;
+      text-transform: uppercase;
+      border-top: 3px solid $blue;
+    }
+
+    .title {
+      flex: 1 1 auto;
+    }
+
+    h3 {
+      margin-bottom: 0px;
+      line-height: 20px;
+      font-size: 20px;
+      font-style: italic;
+      color: $black;
+    }
+
+    .date {
+      margin-bottom: 0px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $darker-gray;
+    }
+
+    .read-more {
+      margin-bottom: 0px;
+      font-size: 13px;
+      font-weight: bold;
+      color: $blue;
+
+      i {
+        font-size: 18px;
+        vertical-align: text-top;
+      }
+    }
+
+    &.featured {
+      height: 790px;
+      background: $dark-blue;
+
+      .thumbnail {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: auto;
+        filter: grayscale(100%);
+        opacity: 0.15;
+        z-index: 0;
+      }
+
+      .category {
+        position: relative;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        padding: 5px 0px;
+        color: $blue;
+        background: none;
+
+        i {
+          color: $white;
+        }
+      }
+
+      .body {
+        position: absolute;
+        bottom: 0px;
+        height: auto;
+        border-top: 0px;
+      }
+
+      h3 {
+        line-height: 32px;
+        font-size: 32px;
+        color: $white;
+      }
+
+      .date {
+        color: $dark-purple-blue;
+      }
+
+      .read-more {
+        margin-top: 50px;
+        color: $white;
+
+        i {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

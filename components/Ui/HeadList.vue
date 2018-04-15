@@ -6,7 +6,7 @@
         :value="item.value"
         :key="item.value"
         v-for="item in items"
-        @click="onItemSelected(item)" />
+        @item="onItemSelected" />
     </div>
   </div>
 </template>
@@ -84,7 +84,7 @@ export default {
     .items-list {
       position: absolute;
       top: 30px;
-      left: 0px;
+      right: 0px;
       padding: 15px;
       visibility: collapse;
       opacity: 0;

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,500i,700,700i');
+
+@font-face {
+    font-family: 'lausanne-esports';
+    src:  url('~/assets/fonts/lausanne-esports.eot?1r487h');
+    src:  url('~/assets/fonts/lausanne-esports.eot?1r487h#iefix') format('embedded-opentype'),
+        url('~/assets/fonts/lausanne-esports.ttf?1r487h') format('truetype'),
+        url('~/assets/fonts/lausanne-esports.woff?1r487h') format('woff'),
+        url('~/assets/fonts/lausanne-esports.svg?1r487h#lausanne-esports') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lausanne-esports' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e905";
+}
+.icon-arrow-right:before {
+  content: "\e904";
+}
+.icon-bnet:before {
+  content: "\e906";
+}
+.icon-check:before {
+  content: "\e907";
+}
+.icon-clip:before {
+  content: "\e908";
+}
+.icon-cog:before {
+  content: "\e909";
+}
+.icon-cross:before {
+  content: "\e90a";
+}
+.icon-csgo:before {
+  content: "\e90b";
+}
+.icon-discord:before {
+  content: "\e90c";
+}
+.icon-download:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-fifa:before {
+  content: "\e90f";
+}
+.icon-file:before {
+  content: "\e910";
+}
+.icon-folder:before {
+  content: "\e911";
+}
+.icon-gplus:before {
+  content: "\e912";
+}
+.icon-hs:before {
+  content: "\e913";
+}
+.icon-images:before {
+  content: "\e914";
+}
+.icon-les:before {
+  content: "\e915";
+}
+.icon-link:before {
+  content: "\e916";
+}
+.icon-login:before {
+  content: "\e917";
+}
+.icon-logout:before {
+  content: "\e918";
+}
+.icon-lol:before {
+  content: "\e919";
+}
+.icon-mail:before {
+  content: "\e91a";
+}
+.icon-menu:before {
+  content: "\e91b";
+}
+.icon-message:before {
+  content: "\e91c";
+}
+.icon-micro:before {
+  content: "\e91d";
+}
+.icon-overwatch:before {
+  content: "\e91e";
+}
+.icon-phone:before {
+  content: "\e91f";
+}
+.icon-qualitas:before {
+  content: "\e920";
+}
+.icon-quote:before {
+  content: "\e921";
+}
+.icon-rl:before {
+  content: "\e922";
+}
+.icon-search:before {
+  content: "\e923";
+}
+.icon-share:before {
+  content: "\e924";
+}
+.icon-small-arrow-bottom:before {
+  content: "\e901";
+}
+.icon-small-arrow-left:before {
+  content: "\e902";
+}
+.icon-small-arrow-right:before {
+  content: "\e900";
+}
+.icon-small-arrow-top:before {
+  content: "\e903";
+}
+.icon-spin:before {
+  content: "\e925";
+}
+.icon-steam:before {
+  content: "\e926";
+}
+.icon-tag:before {
+  content: "\e927";
+}
+.icon-text:before {
+  content: "\e928";
+}
+.icon-traffic:before {
+  content: "\e929";
+}
+.icon-trophy:before {
+  content: "\e92a";
+}
+.icon-twitch:before {
+  content: "\e92b";
+}
+.icon-twitter:before {
+  content: "\e92c";
+}
+.icon-user:before {
+  content: "\e92d";
+}
+.icon-video:before {
+  content: "\e92e";
+}
+.icon-youtube:before {
+  content: "\e92f";
+}

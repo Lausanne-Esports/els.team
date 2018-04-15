@@ -19,8 +19,16 @@ export default {
   @import '~/node_modules/bootstrap/scss/bootstrap-reboot.scss';
   @import '~/node_modules/bootstrap/scss/_utilities.scss';
   @import '~/node_modules/bootstrap/scss/_grid.scss';
+
   @import '~/assets/sass/core/variables.scss';
+  @import '~/assets/sass/core/webfont.scss';
+
   @import '~/assets/sass/ui/wrappers.scss';
+
+  @import "~/assets/sass/layouts/sections.scss";
+
+  @import '~/assets/sass/components/horizontal-list.scss';
+  @import '~/assets/sass/components/article-list.scss';
 
   * {
     font-family: 'Barlow', Arial, sans-serif;
