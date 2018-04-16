@@ -2,6 +2,7 @@
   <div>
     <els-header />
     <nuxt/>
+    <els-sponsors />
     <els-footer />
     <els-copyright />
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Header from './Header.vue'
 import Footer from './Footer.vue'
+import Sponsors from './Sponsors.vue'
 import Copyright from './Copyright.vue'
 
 export default {
   components: {
     'els-header': Header,
     'els-footer': Footer,
+    'els-sponsors': Sponsors,
     'els-copyright': Copyright,
   },
 }
