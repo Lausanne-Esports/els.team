@@ -84,7 +84,7 @@ export default {
     .items-list {
       position: absolute;
       top: 30px;
-      right: 0px;
+      left: 0px;
       padding: 15px;
       visibility: collapse;
       opacity: 0;

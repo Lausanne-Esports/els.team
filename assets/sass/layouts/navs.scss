@@ -1,0 +1,73 @@
+@import '~/assets/sass/core/variables.scss';
+
+.top-nav, .lang-nav {
+  height: 80px;
+
+  a {
+    color: $dark-purple-blue;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+
+    &:hover, &.current {
+      color: $white;
+    }
+  }
+
+  .sub-menu {
+    display: none;
+  }
+}
+
+.lang-nav {
+  a {
+    padding: 0 3px;
+    font-weight: normal;
+
+    &.current {
+      font-weight: bold;
+      color: $blue;
+    }
+  }
+}
+
+.footer-nav {
+  a {
+    position: relative;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $darker-gray;
+    clear: both;
+    transition: 0.3s all;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0px;
+      width: 0%;
+      height: 0px;
+      border-bottom: 2px solid $blue;
+      transition: 0.3s all;
+    }
+
+    &:hover {
+      color: $white;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

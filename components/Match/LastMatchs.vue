@@ -4,8 +4,9 @@
       <div class="head d-flex justify-content-between">
         <div class="d-flex">
           <h2>Derniers matchs</h2>
+          <els-head-list :items="games" />
         </div>
-        <els-head-list :items="games" />
+        <a class="read-more">Tous les matchs <i class="icon-arrow-right" /></a>
       </div>
       <div class="horizontal-list row">
         <div

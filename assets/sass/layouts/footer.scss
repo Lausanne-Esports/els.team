@@ -1,0 +1,58 @@
+@import '~/assets/sass/core/variables.scss';
+
+footer {
+  h4 {
+    margin-bottom: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .infos {
+    font-size: 12px;
+
+    img {
+      width: 100px;
+    }
+
+    .els {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+
+  .socials {
+    a {
+      position: relative;
+      display: block;
+      float: left;
+      margin-bottom: 18px;
+      padding-bottom: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $darker-gray;
+      clear: both;
+      transition: 0.3s all;
+
+      i {
+        margin-right: 10px;
+        font-size: 16px;
+        color: $blue;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .sesf {
+    img {
+      width: 200px;
+    }
+  }
+}

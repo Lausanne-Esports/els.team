@@ -1,16 +1,19 @@
 <template>
   <div>
-    <els-header/>
+    <els-header />
     <nuxt/>
+    <els-footer />
   </div>
 </template>
 
 <script>
 import Header from './Header.vue'
+import Footer from './Footer.vue'
 
 export default {
   components: {
     'els-header': Header,
+    'els-footer': Footer,
   },
 }
 </script>
@@ -25,7 +28,9 @@ export default {
 
   @import '~/assets/sass/ui/wrappers.scss';
 
+  @import "~/assets/sass/layouts/navs.scss";
   @import "~/assets/sass/layouts/sections.scss";
+  @import "~/assets/sass/layouts/footer.scss";
 
   @import '~/assets/sass/components/horizontal-list.scss';
   @import '~/assets/sass/components/article-list.scss';

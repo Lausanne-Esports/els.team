@@ -53,42 +53,5 @@
       width: 100%;
     }
   }
-
-  .top-nav, .lang-nav {
-    height: 80px;
-
-    a {
-      color: $dark-purple-blue;
-      display: inline-block;
-      height: 80px;
-      line-height: 80px;
-      font-style: italic;
-      font-weight: bold;
-      font-size: 14px;
-      padding: 0px 20px;
-      text-transform: uppercase;
-      transition: 0.3s all;
-
-      &:hover, &.current {
-        color: $white;
-      }
-    }
-
-    .sub-menu {
-      display: none;
-    }
-  }
-
-  .lang-nav {
-    a {
-      padding: 0 3px;
-      font-weight: normal;
-
-      &.current {
-        font-weight: bold;
-        color: $blue;
-      }
-    }
-  }
 </style>
 

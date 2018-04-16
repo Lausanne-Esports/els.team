@@ -6,6 +6,7 @@
   }
 
   &.dark-blue {
-      background: $dark-blue;
+    color: $white;
+    background: $dark-blue;
   }
 }
