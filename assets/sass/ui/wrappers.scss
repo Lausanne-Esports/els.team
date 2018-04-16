@@ -5,6 +5,11 @@
       background: $blue;
   }
 
+  &.darker-blue {
+    color: $white;
+    background: $darker-blue;
+  }
+
   &.dark-blue {
     color: $white;
     background: $dark-blue;

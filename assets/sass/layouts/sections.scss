@@ -2,27 +2,27 @@
 
 section {
   .head {
-      text-transform: uppercase;
+    text-transform: uppercase;
 
-      h2 {
-          font-size: 18px;
-          font-style: italic;
-          color: $white;
-      }
+    h2 {
+      font-size: 18px;
+      font-style: italic;
+      color: $white;
+    }
 
-      .read-more {
-          font-weight: bold;
-          font-style: italic;
-          color: $blue;
-          cursor: pointer;
-      }
+    .read-more {
+      font-weight: bold;
+      font-style: italic;
+      color: $blue;
+      cursor: pointer;
+    }
   }
 
   &.light {
-      .head {
-          h2 {
-              color: $black;
-          }
+    .head {
+      h2 {
+        color: $black;
       }
+    }
   }
 }

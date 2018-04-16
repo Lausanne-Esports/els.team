@@ -5,7 +5,7 @@
         <h2>News</h2>
         <a class="read-more">Toutes les news <i class="icon-arrow-right" /></a>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="col-md-4 ">
           <a class="article featured" :href="featured.link">
             <div

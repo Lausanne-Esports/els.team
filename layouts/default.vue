@@ -3,17 +3,20 @@
     <els-header />
     <nuxt/>
     <els-footer />
+    <els-copyright />
   </div>
 </template>
 
 <script>
 import Header from './Header.vue'
 import Footer from './Footer.vue'
+import Copyright from './Copyright.vue'
 
 export default {
   components: {
     'els-header': Header,
     'els-footer': Footer,
+    'els-copyright': Copyright,
   },
 }
 </script>

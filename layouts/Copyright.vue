@@ -1,0 +1,25 @@
+<template>
+  <div class="wrapper darker-blue">
+    <div class="container copyright pb-3 pt-3 d-flex justify-content-between">
+      <p class="els">2018 &copy; Lausanne-Sport eSports</p>
+      <p>Design: <a href="#">Louis "biip" Burgard</a></p>
+    </div>
+  </div>
+</template>
+<style lang="scss" scoped>
+  @import '~/assets/sass/core/variables.scss';
+
+  .copyright {
+    p, a {
+      font-size: 12px;
+      color: $dark-purple-blue;
+      margin-bottom: 0px;
+    }
+
+    .els {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+</style>
+
