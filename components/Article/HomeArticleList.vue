@@ -7,26 +7,26 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-4 ">
-          <a class="article featured" :href="featured.link">
+          <nuxt-link :to="featured.link" class="article featured">
             <div
               class="thumbnail"
               :style="{ backgroundImage: 'url(' + featured.thumbnail + ')' }"
             />
             <div class="body">
               <div class="title">
-                <div class="category"><i class="icon-lol" /> {{ featured.category.name }}</div>
+                <div class="category"><i :class="'icon-' + article.icon" /> {{ featured.category.name }}</div>
                 <h3>{{ featured.title }}</h3>
                 <p class="date">{{ featured.date }}</p>
               </div>
               <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
             </div>
-          </a>
+          </nuxt-link>
         </div>
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-6" :key="article.id" v-for="article in articles">
-              <a :href="article.link" class="article">
-                <div class="category"><i class="icon-lol" /> {{ article.category.name }}</div>
+              <nuxt-link :to="article.link" class="article">
+                <div class="category"><i :class="'icon-' + article.icon" /> {{ article.category.name }}</div>
                 <div
                   class="thumbnail"
                   :style="{ backgroundImage: 'url(' + article.thumbnail + ')' }"
@@ -38,7 +38,7 @@
                   </div>
                   <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
                 </div>
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -58,13 +58,14 @@ export default {
           id: 1,
           title: 'Création du Darwin Project Switzerland',
           date: '22 jan 13h37',
-          link: '#',
+          link: '/articles/1',
           thumbnail: 'https://i.imgur.com/SClWgHk.jpg',
           category: {
             id: 1,
             slug: 'news',
             name: 'News',
           },
+          icon: 'lol',
         },
         {
           id: 2,
@@ -77,6 +78,7 @@ export default {
             slug: 'resultats',
             name: 'Résulstats',
           },
+          icon: 'overwatch',
         },
       ],
       featured: {
@@ -90,6 +92,7 @@ export default {
           slug: 'resultats',
           name: 'Résulstats',
         },
+        icon: 'hs',
       },
     }
   },

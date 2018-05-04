@@ -1,0 +1,147 @@
+@import '~/assets/sass/core/variables.scss';
+
+article.single {
+  header {
+    position: relative;
+    height: 730px;
+    color: $white;
+    background-color: $dark-blue;
+
+    .container {
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      margin-bottom: 0px;
+      line-height: 48px;
+      font-size: 64px;
+      font-style: italic;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .sub-title {
+      margin-bottom: 0px;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .category {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $blue;
+
+      i {
+        margin-right: 5px;
+        font-size: 22px;
+        color: $white;
+        vertical-align: middle;
+      }
+    }
+
+    .date {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $dark-purple-blue;
+    }
+
+    .image-head {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: auto;
+      filter: grayscale(100%);
+      opacity: 0.15;
+      z-index: 0;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  .socials {
+    height: 80px;
+    border-top: 1px solid darken($dark-purple-blue, 10);
+    border-bottom: 3px solid darken($dark-purple-blue, 10);
+    background: $dark-blue;
+
+    i {
+      margin-right: 40px;
+      font-size: 24px;
+      color: $dark-purple-blue;
+    }
+
+    a {
+      i {
+        color: $blue;
+      }
+    }
+  }
+
+  .body {
+    padding-top: ($paragraph-space * 2);
+    font-size: $paragraph-size;
+
+    h2, h3, p {
+      margin-bottom: $paragraph-space;
+    }
+
+    h2, h3 {
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-left: -(100% / 12);
+      padding-left: (100% / 12);
+      position: relative;
+      line-height: $h2-size;
+      font-size: $h2-size;
+      overflow: hidden;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+      }
+
+      &:before {
+        left: -30px;
+        bottom: 4px;
+        width: (100% / 12);
+        height: 0px;
+        border-bottom: 3px solid $blue;
+      }
+
+      &:after {
+        display: inline-block;
+        margin-left: 30px;
+        margin-right:-100%;
+        bottom: 4px;
+        width: 100%;
+        height: 0px;
+        border-bottom: 1px solid $darker-gray;
+      }
+    }
+
+    h3 {
+      line-height: $h3-size;
+      font-size: $h3-size;
+      color: $blue;
+    }
+
+    .headline {
+      font-size: $headline-size;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: $line-height;
+    }
+  }
+}

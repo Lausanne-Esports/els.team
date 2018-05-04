@@ -1,21 +1,21 @@
 <template>
-  <header class="main">
+  <header class="main" :class="{ compact: compact }">
     <div class="nav-bar">
       <div class="container d-flex justify-content-between">
         <nav class="top-nav">
-          <a href="#">Accueil</a>
-          <a href="#">News</a>
-          <a href="#">Résultats</a>
+          <nuxt-link to="/">Accueil</nuxt-link>
+          <nuxt-link to="#">News</nuxt-link>
+          <nuxt-link to="#">Résultats</nuxt-link>
           <div class="sub-menu">
-            <a href="#">League of Legends</a>
-            <a href="#">Overwatch</a>
-            <a href="#">Rocket League</a>
-            <a href="#">Fifa</a>
+            <nuxt-link to="#">League of Legends</nuxt-link>
+            <nuxt-link to="#">Overwatch</nuxt-link>
+            <nuxt-link to="#">Rocket League</nuxt-link>
+            <nuxt-link to="#">Fifa</nuxt-link>
           </div>
-          <a href="#">Structure</a>
-          <a href="#">Palmarès</a>
-          <a href="#">Médias</a>
-          <a href="#">Contact</a>
+          <nuxt-link to="#">Structure</nuxt-link>
+          <nuxt-link to="#">Palmarès</nuxt-link>
+          <nuxt-link to="#">Médias</nuxt-link>
+          <nuxt-link to="#">Contact</nuxt-link>
         </nav>
         <nav class="lang-nav">
           <a href="#">FR</a> / <a href="#">EN</a>
@@ -28,6 +28,17 @@
   </header>
 </template>
 
+<script>
+export default {
+  props: {
+    compact: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
+</script>
+
 <style lang="scss" scoped>
   @import '~/assets/sass/core/variables.scss';
 
@@ -35,6 +46,14 @@
     background: url('~/assets/images/header_bg.jpg') top center;
     background-size: cover;
     height: 800px;
+
+    &.compact {
+      height: auto;
+
+      .logo {
+        display: none;
+      }
+    }
   }
 
   .nav-bar {
@@ -54,4 +73,3 @@
     }
   }
 </style>
-

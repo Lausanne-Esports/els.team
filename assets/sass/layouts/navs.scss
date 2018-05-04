@@ -4,19 +4,23 @@
   height: 80px;
 
   a {
-    color: $dark-purple-blue;
     display: inline-block;
+    padding: 0px 20px;
     height: 80px;
     line-height: 80px;
     font-style: italic;
     font-weight: bold;
     font-size: 14px;
-    padding: 0px 20px;
+    color: $dark-purple-blue;
     text-transform: uppercase;
     transition: 0.3s all;
 
     &:hover, &.current {
       color: $white;
+    }
+
+    &:first-child {
+      padding-left: 0px;
     }
   }
 
