@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-article col-md-9" style="background-image: url(https://i.imgur.com/Ltfi60M.jpg);">
+  <div class="featured-article col-md-12" style="background-image: url(https://i.imgur.com/Ltfi60M.jpg);">
     <div class="infos">
       <p class="category mb-0"><i class="icon-overwatch" /> Résultats</p>
       <h2>Les skins de l'Overwatch League débarquent</h2>

@@ -2,7 +2,7 @@
   <section id="headlines-wrapper" class="wrapper dark-blue">
     <div class="headlines container d-flex">
       <els-featured-article />
-      <els-twitter-feed />
+      <!-- <els-twitter-feed /> -->
     </div>
   </section>
 </template>
