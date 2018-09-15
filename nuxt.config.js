@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   // Headers of the page
   head: {
@@ -13,6 +15,19 @@ module.exports = {
   },
   // Customize the progress bar color
   loading: { color: '#3B8070' },
+
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/axios',
+  ],
+
+  axios: {
+    credentials: true,
+    proxyHeaders: true,
+  },
 
   // Build configuration
   build: {

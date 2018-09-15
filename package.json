@@ -5,7 +5,7 @@
   "author": "Romain Lanz <romain.lanz@slynova.ch>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,10 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/dotenv": "^1.1.1",
+    "@slynova/slug": "^1.1.2",
+    "cross-env": "^5.2.0",
+    "nuxt-edge": "^2.0.0-25615151.226b90d",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@slynova/eslint-config": "^1.0.4",
     "babel-eslint": "^8.2.1",
     "bootstrap": "^4.1.0",
     "eslint": "^4.15.0",

@@ -7,39 +7,11 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-4 ">
-          <nuxt-link :to="featured.link" class="article featured">
-            <div
-              class="thumbnail"
-              :style="{ backgroundImage: 'url(' + featured.thumbnail + ')' }"
-            />
-            <div class="body">
-              <div class="title">
-                <div class="category"><i :class="'icon-' + article.icon" /> {{ featured.category.name }}</div>
-                <h3>{{ featured.title }}</h3>
-                <p class="date">{{ featured.date }}</p>
-              </div>
-              <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
-            </div>
-          </nuxt-link>
+          <featured-article-card :featured="featured"></featured-article-card>
         </div>
         <div class="col-md-8">
           <div class="row">
-            <div class="col-md-6" :key="article.id" v-for="article in articles">
-              <nuxt-link :to="article.link" class="article">
-                <div class="category"><i :class="'icon-' + article.icon" /> {{ article.category.name }}</div>
-                <div
-                  class="thumbnail"
-                  :style="{ backgroundImage: 'url(' + article.thumbnail + ')' }"
-                />
-                <div class="body">
-                  <div class="title">
-                    <h3>{{ article.title }}</h3>
-                    <p class="date">{{ article.date }}</p>
-                  </div>
-                  <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
-                </div>
-              </nuxt-link>
-            </div>
+            <article-card class="col-md-6" :key="article.id" :article="article" v-for="article in articles"></article-card>
           </div>
         </div>
       </div>
@@ -48,57 +20,38 @@
 </template>
 
 <script>
+import FeaturedArticleCard from './FeaturedArticleCard'
+import ArticleCard from './ArticleCard'
+
 export default {
   components: {
+    ArticleCard,
+    FeaturedArticleCard
   },
-  data () {
-    return {
-      articles: [
-        {
-          id: 1,
-          title: 'Création du Darwin Project Switzerland',
-          date: '22 jan 13h37',
-          link: '/articles/1',
-          thumbnail: 'https://i.imgur.com/SClWgHk.jpg',
-          category: {
-            id: 1,
-            slug: 'news',
-            name: 'News',
-          },
-          icon: 'lol',
-        },
-        {
-          id: 2,
-          title: 'Test',
-          date: '22 jan 13h37',
-          link: '#',
-          thumbnail: 'https://i.imgur.com/pOmBLtV.jpg',
-          category: {
-            id: 1,
-            slug: 'resultats',
-            name: 'Résulstats',
-          },
-          icon: 'overwatch',
-        },
-      ],
-      featured: {
+
+  data: () => ({
+    articles: [],
+    featured: {
+      id: 1,
+      title: 'Double titre national pour Lausanne-Sport eSports !',
+      date: '22 jan 13h37',
+      link: '#',
+      thumbnail: 'https://pbs.twimg.com/media/DQJrwTxX0AAZdVK.jpg:large',
+      category: {
         id: 1,
-        title: 'Double titre national pour Lausanne-Sport eSports !',
-        date: '22 jan 13h37',
-        link: '#',
-        thumbnail: 'https://pbs.twimg.com/media/DQJrwTxX0AAZdVK.jpg:large',
-        category: {
-          id: 1,
-          slug: 'resultats',
-          name: 'Résulstats',
-        },
-        icon: 'hs',
+        slug: 'resultats',
+        name: 'Résulstats',
       },
+      icon: 'hs',
+    },
+  }),
+
+  async created () {
+    try {
+    this.articles = await this.$axios.$get('/articles?limit=4')
+    } catch(e) {
+      console.log(e);
     }
   },
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

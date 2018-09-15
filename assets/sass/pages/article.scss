@@ -9,6 +9,7 @@ article.single {
 
     .container {
       margin-bottom: 50px;
+      z-index: 99;
     }
 
     h1 {
@@ -142,6 +143,30 @@ article.single {
 
     p {
       line-height: $line-height;
+    }
+
+    img {
+      margin-bottom: $paragraph-space;
+      max-width: 100%;
+      height: auto;
+    }
+
+    ul, ol {
+      margin-bottom: $paragraph-space;
+
+      li {
+        line-height: $line-height;
+      }
+    }
+
+    blockquote {
+      padding: 30px;
+      border-top: 2px solid $blue;
+      background: $white;
+
+      p {
+        margin-bottom: 0px;
+      }
     }
   }
 }
