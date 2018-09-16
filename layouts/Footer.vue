@@ -1,7 +1,7 @@
 <template>
   <footer class="wrapper dark-blue pt-5 pb-5">
     <div class="container">
-      <div class="d-flex justify-content-between">
+      <div class="d-md-flex justify-md-content-between">
         <div class="infos">
           <img src="~/assets/images/logo_footer.png" class="mb-3">
           <p class="els">Lausanne-Sport<br>
@@ -28,7 +28,7 @@
           <a href="#" target="blank"><i class="icon-discord" /> Discord</a>
           <a href="#" target="blank"><i class="icon-steam" /> Steam</a>
         </div>
-        <div class="sesf align-self-end">
+        <div class="sesf align-md-self-end">
           <img src="~/assets/images/sesf.png">
         </div>
       </div>

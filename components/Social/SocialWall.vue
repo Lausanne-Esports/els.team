@@ -131,4 +131,18 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+
+    .social-wall {
+      .posts {
+        .post {
+          i {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+  }
 </style>

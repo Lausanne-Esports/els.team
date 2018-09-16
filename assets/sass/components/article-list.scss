@@ -131,3 +131,19 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .articles {
+    .article {
+      &.featured {
+        height: auto;
+
+        .body {
+          position: relative;
+        }
+      }
+    }
+  }
+
+}

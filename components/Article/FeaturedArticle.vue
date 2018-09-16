@@ -48,6 +48,7 @@ export default {
   .featured-article {
     background-color: $white;
     background-size: cover;
+    background-position: center;
     position: relative;
   }
 
@@ -97,6 +98,18 @@ export default {
       font-size: 24px;
       color: $blue;
       vertical-align: sub;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .infos {
+      padding-left: 30px;
+      padding-bottom: 30px;
+      background-image: linear-gradient(15deg, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 90%);
+    }
+
+    h2 {
+      font-size: 22px;
     }
   }
 </style>

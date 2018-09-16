@@ -30,6 +30,8 @@
 }
 
 .lang-nav {
+  display: none;
+
   a {
     padding: 0 3px;
     font-weight: normal;
@@ -73,5 +75,11 @@
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav {
+    display: none;
   }
 }

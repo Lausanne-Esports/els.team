@@ -56,3 +56,29 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    .infos {
+      width: 70%;
+    }
+
+    .infos, .footer-nav {
+      float: left;
+    }
+
+    .socials {
+      padding-top: 15px;
+      width: 100%;
+      clear: both;
+
+      a {
+        float: none;
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+
+}
