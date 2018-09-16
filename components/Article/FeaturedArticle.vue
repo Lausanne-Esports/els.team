@@ -1,14 +1,18 @@
 <template>
-  <div v-if="!processingRequest" class="featured-article col-md-12" :style="`background-image: url(${article.featured_thumbnail});`">
-    <div class="infos">
-      <p class="category mb-0"><i :class="`icon-${article.category.code}`" /> {{ article.category.name }}</p>
-      <h2>{{ translation.headline }}</h2>
-      <a href="#" class="read-more mb-0">Lire l'article <i class="icon-arrow-right" /></a>
-    </div>
+  <div v-if="!processingRequest" class="featured-article col-md-12" :style="`background-image: url(${thumbnail});`">
+    <nuxt-link :to="url">
+      <div class="infos">
+        <p class="category mb-0"><i :class="`icon-${article.category.code}`" /> {{ article.category.name }}</p>
+        <h2>{{ translation.headline }}</h2>
+        <div href="#" class="read-more mb-0">Lire l'article <i class="icon-arrow-right" /></div>
+      </div>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
+import slug from '@slynova/slug';
+
 export default {
   data: () => ({
     processingRequest: true,
@@ -23,9 +27,17 @@ export default {
   },
 
   computed: {
+    url () {
+      return `/articles/${this.article.id}-${slug(this.translation.headline)}`
+    },
+
     translation () {
       return this.article.translations.find(t => t.language.code === 'fr')
     },
+
+    thumbnail() {
+      return this.article.featured_thumbnail || '~/assets/images/header_bg.jpg';
+    }
   }
 }
 </script>
