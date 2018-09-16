@@ -1,5 +1,5 @@
 <template>
-  <article class="col-md-6">
+  <article>
     <nuxt-link :to="url" class="article">
       <div class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</div>
       <div

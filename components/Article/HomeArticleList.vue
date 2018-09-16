@@ -3,7 +3,7 @@
     <div class="articles container">
       <div class="head d-flex justify-content-between">
         <h2>News</h2>
-        <a class="read-more">Toutes les news <i class="icon-arrow-right" /></a>
+        <nuxt-link to="/articles" class="read-more">Toutes les news <i class="icon-arrow-right" /></nuxt-link>
       </div>
       <div class="row mt-3">
         <div class="col-md-4 ">
@@ -35,7 +35,7 @@ export default {
 
   async created () {
     try {
-    this.articles = await this.$axios.$get('/articles?limit=4')
+      this.articles = await this.$axios.$get('/articles?limit=4')
     } catch(e) {
       //console.log(e);
     }
