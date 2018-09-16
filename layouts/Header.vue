@@ -4,7 +4,7 @@
       <div class="container d-flex justify-content-between">
         <nav class="top-nav">
           <nuxt-link to="/">Accueil</nuxt-link>
-          <nuxt-link to="#">News</nuxt-link>
+          <nuxt-link to="/articles">News</nuxt-link>
           <nuxt-link to="#">Résultats</nuxt-link>
           <div class="sub-menu">
             <nuxt-link to="#">League of Legends</nuxt-link>
