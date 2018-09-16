@@ -1,11 +1,11 @@
 <template>
   <article class="single">
     <header class="d-flex align-items-end">
-      <div class="image-head" :style="{ backgroundImage: 'url(' + article.thumbnail + ')' }" />
+      <div class="image-head" :style="{ backgroundImage: 'url(' + thumbnail + ')' }" />
       <div class="container">
-        <p class="category"><i :class="'icon-' + category.code" /> {{ category.name }}</p>
-        <h1>{{ translation.headline }}</h1>
-        <p class="sub-title" v-if="translation.subtitle">{{ translation.subtitle }}</p>
+        <p class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</p>
+        <h1>{{ article.headline }}</h1>
+        <p class="sub-title" v-if="article.subtitle">{{ article.subtitle }}</p>
         <p class="date">{{ article.published_at }}</p>
       </div>
     </header>
@@ -19,8 +19,7 @@
     </div>
     <div class="container body">
       <div class="row">
-        {{ article }}
-        <div class="col-md-10 offset-md-1" v-html="translation.body"></div>
+        <div class="col-md-10 offset-md-1" v-html="article.body"></div>
       </div>
     </div>
   </article>
@@ -35,28 +34,23 @@ export default {
   data () {
     return {
       article: {},
-      categories: {},
     }
   },
   async asyncData({ params, error, $axios }) {
     try {
       const [id, slug] = params.id.split('-');
 
-      const categories = await $axios.$get('articles/categories');
-      const article = await $axios.$get('/articles/' + id);
+      const article = await $axios.$get('/articles/' + id + "?lang=fr");
 
-      return { article, categories };
+      return { article };
     } catch(e) {
       error({ message: 'Article not found', statusCode: 404 });
     }
   },
   computed: {
-    translation () {
-      return this.article.translations.find(t => t.language_id === 1)
-    },
-    category () {
-      return this.categories.find(c => c.id === this.article.category_id)
-    },
+    thumbnail() {
+      return this.article.thumbnail || '~/assets/images/header_bg.jpg';
+    }
   }
 }
 </script>

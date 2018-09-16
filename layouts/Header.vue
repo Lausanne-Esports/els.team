@@ -12,7 +12,7 @@
             <nuxt-link to="#">Rocket League</nuxt-link>
             <nuxt-link to="#">Fifa</nuxt-link>
           </div>
-          <nuxt-link to="#">Structure</nuxt-link>
+          <nuxt-link to="/structure">Structure</nuxt-link>
           <nuxt-link to="#">Palmarès</nuxt-link>
           <nuxt-link to="#">Médias</nuxt-link>
           <nuxt-link to="#">Contact</nuxt-link>

@@ -4,7 +4,7 @@
       <div class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</div>
       <div
         class="thumbnail"
-        :style="{ backgroundImage: 'url(' + article.thumbnail + ')' }"
+        :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
       />
       <section class="body">
         <div class="title">
@@ -31,6 +31,10 @@ export default {
     translation () {
       return this.article.translations.find(t => t.language.code === 'fr')
     },
+
+    thumbnail() {
+      return this.article.thumbnail || '~/assets/images/header_bg.jpg';
+    }
   },
 }
 </script>

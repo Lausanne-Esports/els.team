@@ -1,0 +1,67 @@
+.lineup-card {
+  position: relative;
+  padding-top: 100%;
+  margin-bottom: 30px;
+  background: $dark-blue;
+
+  .bg-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.30;
+    z-index: 0;
+  }
+
+  @each $lineup in $lineups {
+
+    &.#{$lineup} {
+      .bg-image {
+        background-image: url('~/assets/images/lineup/#{$lineup}.png');
+      }
+    }
+
+  }
+
+  .body {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+  }
+
+  .players {
+    margin-bottom: 15px;
+    color: $blue;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+    line-height: 36px;
+    font-size: 32px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  .read-more {
+    margin-top: 40px;
+    color: $white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    i {
+      margin-left: 10px;
+      color: $blue;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}

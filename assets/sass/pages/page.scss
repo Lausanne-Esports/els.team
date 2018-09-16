@@ -1,0 +1,53 @@
+@import '~/assets/sass/core/variables.scss';
+
+.page {
+  header {
+    position: relative;
+    height: 730px;
+    color: $white;
+    background-color: $dark-blue;
+
+    .container {
+      margin-bottom: 50px;
+      z-index: 99;
+    }
+
+    h1 {
+      margin-bottom: 0px;
+      line-height: 48px;
+      font-size: 64px;
+      font-style: italic;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .sub-title {
+      margin-bottom: 0px;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .image-head {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: auto;
+      filter: grayscale(100%);
+      opacity: 0.15;
+      z-index: 0;
+      background-position: top center;
+      background-size: cover;
+    }
+  }
+
+  > .body {
+    padding-top: ($paragraph-space * 2);
+    font-size: $paragraph-size;
+
+  }
+}

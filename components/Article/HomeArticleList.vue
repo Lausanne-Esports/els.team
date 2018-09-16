@@ -7,7 +7,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-4 ">
-          <featured-article-card :featured="featured"></featured-article-card>
+          <featured-article-card v-if="featured" :article="featured"></featured-article-card>
         </div>
         <div class="col-md-8">
           <div class="row">
@@ -31,26 +31,19 @@ export default {
 
   data: () => ({
     articles: [],
-    featured: {
-      id: 1,
-      title: 'Double titre national pour Lausanne-Sport eSports !',
-      date: '22 jan 13h37',
-      link: '#',
-      thumbnail: 'https://pbs.twimg.com/media/DQJrwTxX0AAZdVK.jpg:large',
-      category: {
-        id: 1,
-        slug: 'resultats',
-        name: 'Résulstats',
-      },
-      icon: 'hs',
-    },
   }),
 
   async created () {
     try {
     this.articles = await this.$axios.$get('/articles?limit=4')
     } catch(e) {
-      console.log(e);
+      //console.log(e);
+    }
+  },
+
+  computed: {
+    featured() {
+        return this.articles[0];
     }
   },
 }
