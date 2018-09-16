@@ -5,7 +5,7 @@
         <h2>News</h2>
         <a class="read-more">Toutes les news <i class="icon-arrow-right" /></a>
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3" v-if="!processingRequest">
         <div class="col-md-4 ">
           <featured-article-card :article="lastArticle"></featured-article-card>
         </div>
@@ -27,6 +27,7 @@ export default {
   components: { ArticleCard, FeaturedArticleCard },
 
   data: () => ({
+    processingRequest: true,
     lastArticle: {},
     articles: [],
   }),
@@ -36,6 +37,7 @@ export default {
 
     this.lastArticle = lastArticle
     this.articles = articles
+    this.processingRequest = false
   },
 }
 </script>
