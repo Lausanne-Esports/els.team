@@ -13,7 +13,7 @@
       </a>
       <a class="post dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/abbafabe200e2a77974c1b27e69afc9c/5B666F3E/t51.2885-15/e35/30078887_194086307984180_550220945961254912_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post dark-blue" href="#" target="blank">
@@ -21,12 +21,12 @@
       </a>
       <a class="post w-double dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/efb9ae7f241785a2d9644b74c637c6f4/5B5B92E2/t51.2885-15/e35/29717771_2090492021165456_1375851837940301824_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post w-double dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/efb9ae7f241785a2d9644b74c637c6f4/5B5B92E2/t51.2885-15/e35/29717771_2090492021165456_1375851837940301824_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post white" href="#" target="blank">
@@ -37,12 +37,12 @@
       </a>
       <a class="post dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/abbafabe200e2a77974c1b27e69afc9c/5B666F3E/t51.2885-15/e35/30078887_194086307984180_550220945961254912_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/abbafabe200e2a77974c1b27e69afc9c/5B666F3E/t51.2885-15/e35/30078887_194086307984180_550220945961254912_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post" href="#" target="blank">
@@ -50,7 +50,7 @@
       </a>
       <a class="post w-double dark-blue" href="#" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/efb9ae7f241785a2d9644b74c637c6f4/5B5B92E2/t51.2885-15/e35/29717771_2090492021165456_1375851837940301824_n.jpg);"
+          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
         />
       </a>
       <a class="post dark-blue" href="#" target="blank">

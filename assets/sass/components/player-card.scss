@@ -1,0 +1,66 @@
+.player-card {
+  margin-bottom: 30px;
+  border-bottom: 2px solid $blue;
+  background: $white;
+
+  .picture {
+    position: relative;
+    height: 390px;
+    background: url('~/assets/images/background_player.jpg');
+    background-size: cover;
+
+    img {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .body {
+    padding: 50px;
+
+    label {
+      color: $dark-purple-blue;
+      font-size: 13px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .fullname, .role {
+      margin: 0px;
+      line-height: 23px;
+      color: $dark-blue;
+      font-size: 23px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      line-height: 40px;
+      color: $blue;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .role {
+      font-size: 20px;
+    }
+  }
+
+  .socials {
+    margin-top: 15px;
+    padding-top: 15px;
+    font-size: 24px;
+    border-top: 1px solid $gray;
+
+    a {
+      padding-right: 10px;
+    }
+  }
+}
