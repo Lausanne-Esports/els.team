@@ -1,12 +1,34 @@
 <template>
-  <div class="featured-article col-md-12" style="background-image: url(https://i.imgur.com/Ltfi60M.jpg);">
+  <div v-if="!processingRequest" class="featured-article col-md-12" :style="`background-image: url(${article.featured_thumbnail});`">
     <div class="infos">
-      <p class="category mb-0"><i class="icon-overwatch" /> Résultats</p>
-      <h2>Les skins de l'Overwatch League débarquent</h2>
+      <p class="category mb-0"><i :class="`icon-${article.category.code}`" /> {{ article.category.name }}</p>
+      <h2>{{ translation.headline }}</h2>
       <a href="#" class="read-more mb-0">Lire l'article <i class="icon-arrow-right" /></a>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    processingRequest: true,
+    article: {},
+  }),
+
+  async created () {
+    const [article] = await this.$axios.$get('articles?filter=featured')
+
+    this.article = article
+    this.processingRequest = false
+  },
+
+  computed: {
+    translation () {
+      return this.article.translations.find(t => t.language.code === 'fr')
+    },
+  }
+}
+</script>
 
 <style lang="scss" scoped>
   @import '~/assets/sass/core/variables.scss';
