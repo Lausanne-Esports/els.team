@@ -7,7 +7,7 @@
       </div>
       <div class="row mt-3">
         <div class="col-md-4 ">
-          <featured-article-card v-if="featured" :article="featured"></featured-article-card>
+          <featured-article-card :article="lastArticle"></featured-article-card>
         </div>
         <div class="col-md-8">
           <div class="row">
@@ -20,31 +20,22 @@
 </template>
 
 <script>
-import FeaturedArticleCard from './FeaturedArticleCard'
 import ArticleCard from './ArticleCard'
+import FeaturedArticleCard from './FeaturedArticleCard'
 
 export default {
-  components: {
-    ArticleCard,
-    FeaturedArticleCard
-  },
+  components: { ArticleCard, FeaturedArticleCard },
 
   data: () => ({
+    lastArticle: {},
     articles: [],
   }),
 
   async created () {
-    try {
-    this.articles = await this.$axios.$get('/articles?limit=4')
-    } catch(e) {
-      //console.log(e);
-    }
-  },
+    const [lastArticle, ...articles] = await this.$axios.$get('/articles?limit=5')
 
-  computed: {
-    featured() {
-        return this.articles[0];
-    }
+    this.lastArticle = lastArticle
+    this.articles = articles
   },
 }
 </script>
