@@ -112,6 +112,13 @@ export default {
       awards: []
     }],
   }),
+
+  head: () => ({
+    title: 'Palmarès | Lausanne eSports',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Palmarès du Lausanne eSports' },
+    ],
+  }),
 }
 </script>
 

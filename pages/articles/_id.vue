@@ -42,7 +42,7 @@ export default {
 
   head () {
     return {
-      title: `${this.article.headline} | Lausanne Sport eSports`,
+      title: `${this.article.headline} | Lausanne eSports`,
       meta: [
         { hid: 'description', name: 'description', content: this.article.description },
       ],

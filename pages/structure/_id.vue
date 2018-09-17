@@ -35,7 +35,16 @@ export default {
     const team = await $axios.$get(`teams/${id}`)
 
     return { team }
-  }
+  },
+
+  head () {
+    return {
+      title: `${this.team.name} | Lausanne eSports`,
+      meta: [
+        { hid: 'description', name: 'description', content: `Page de l'équipe ${this.team.name}` },
+      ],
+    }
+  },
 }
 </script>
 

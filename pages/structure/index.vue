@@ -33,6 +33,13 @@ export default {
 
     return { teams }
   },
+
+  head: () => ({
+    title: 'Structure | Lausanne eSports',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Structure du Lausanne eSports' },
+    ],
+  }),
 }
 </script>
 

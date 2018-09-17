@@ -44,6 +44,13 @@ export default {
     },
   }),
 
+  head: () => ({
+    title: 'Contact | Lausanne eSports',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Page de contact' },
+    ],
+  }),
+
   methods: {
     async sendEmail () {
       try {
