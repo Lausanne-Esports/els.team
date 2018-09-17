@@ -1,7 +1,11 @@
 <template>
   <div class="categories-filter">
-    <nuxt-link to="/articles">Tous les articles</nuxt-link>
-    <nuxt-link v-for="category in categories" :key="category.id" :to="'/articles/?filter=' + category.code">{{ category.name }}</nuxt-link>
+    <a @click="$emit('categoryChanged')">Tous les articles</a>
+    <a
+      v-for="category in categories"
+      :key="category.id"
+      @click="$emit('categoryChanged', category)"
+    >{{ category.name }}</a>
   </div>
 </template>
 

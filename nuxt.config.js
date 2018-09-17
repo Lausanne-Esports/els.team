@@ -3,7 +3,7 @@ require('dotenv').config()
 module.exports = {
   // Headers of the page
   head: {
-    title: 'els.team',
+    title: 'Lausanne Sport eSports',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

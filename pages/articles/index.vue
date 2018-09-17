@@ -7,58 +7,71 @@
       </div>
     </header>
     <div class="container body">
-      <categories-filter :categories="categories" @select="categoryChanged"></categories-filter>
+      <categories-filter :categories="categories" @categoryChanged="selectCategory"></categories-filter>
 
       <div class="row articles">
-        <article-card class="col-md-4" :key="article.id" :article="article" v-for="article in articles"></article-card>
+        <article-card
+          class="col-md-4"
+          :key="article.id"
+          :article="article"
+          v-for="article in filteredArticles"
+        ></article-card>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import ArticleCard from '../../components/Article/ArticleCard'
-import CategoriesFilter from '../../components/Article/Categories/CategoriesFilter'
+import ArticleCard from '@/components/Article/ArticleCard'
+import CategoriesFilter from '@/components/Article/Categories/CategoriesFilter'
 
 export default {
   layout: 'article',
-  components: {
-    ArticleCard,
-    CategoriesFilter
-  },
-  data () {
-    return {
-      articles: [],
-      categories: [],
-    }
-  },
+
+  components: { ArticleCard, CategoriesFilter },
+
+  data: () => ({
+    articles: [],
+    categories: [],
+    selectedCategory: null,
+  }),
+
+  head: () => ({
+    title: 'Articles | Lausanne Sport eSports',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Liste des articles' },
+    ],
+  }),
+
   async asyncData ({ query, error, $axios }) {
     try {
-      let articles = null;
+      const [articles, categories] = await Promise.all([
+        $axios.$get('/articles'),
+        $axios.$get('/articles/categories'),
+      ])
 
-      if(query.filter) {
-        articles = await $axios.$get('/articles?filter=' + query.filter);
-      } else {
-        articles = await $axios.$get('/articles');
+      return { articles, categories }
+    } catch(e) {
+    }
+  },
+
+  computed: {
+    filteredArticles () {
+      if (!this.selectedCategory) {
+        return this.articles
       }
 
-      const categories = await $axios.$get('/articles/categories');
+      return this.articles.filter(article => (
+        article.category.code === this.selectedCategory.code
+      ))
+    }
+  },
 
-      return { articles, categories };
-    } catch(e) {
-      //console.log(e);
-    }
-  },
   methods: {
-    async categoryChanged(category) {
-      this.articles = await this.$axios.$get('/articles?filter=' + category);
-    }
+    selectCategory (category) {
+      this.selectedCategory = category
+    },
   },
-  watch: {
-    '$route': function(newValue) {
-      this.categoryChanged(newValue.query.filter);
-    }
-  }
 }
 </script>
 
