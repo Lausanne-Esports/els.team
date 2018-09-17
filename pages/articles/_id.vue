@@ -12,8 +12,8 @@
     <div class="socials d-flex align-items-center">
       <div class="container">
         <i class="icon-share" />
-        <a href="#" target="blank"><i class="icon-twitter" /></a>
-        <a href="#" target="blank"><i class="icon-facebook" /></a>
+        <a :href="twitterShareUrl" target="blank"><i class="icon-twitter" /></a>
+        <a :href="facebookShareUrl" target="blank"><i class="icon-facebook" /></a>
         <a href="#" target="blank"><i class="icon-reddit" /></a>
       </div>
     </div>
@@ -50,6 +50,12 @@ export default {
   computed: {
     thumbnail() {
       return this.article.thumbnail || '~/assets/images/header_bg.jpg';
+    },
+    twitterShareUrl() {
+      return 'https://twitter.com/intent/tweet?text=' + this.article.headline + " https://els.team" + this.$route.path;
+    },
+    facebookShareUrl() {
+      return 'https://www.facebook.com/sharer/sharer.php?u=https://www.els.team' + this.$route.path;
     }
   }
 }

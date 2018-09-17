@@ -11,11 +11,11 @@
             1803 Chardonne Suisse / Vaud</p>
         </div>
         <nav class="footer-nav">
-          <a href="/">Accueil</a>
-          <a href="/articles">News</a>
-          <a href="/structure">Structure</a>
-          <a href="/awards">Palmarès</a>
-          <a href="/contact">Contact</a>
+          <nuxt-link to="/">Accueil</nuxt-link>
+          <nuxt-link to="/articles">News</nuxt-link>
+          <nuxt-link to="/structure">Structure</nuxt-link>
+          <nuxt-link to="/awards">Palmarès</nuxt-link>
+          <nuxt-link to="/contact">Contact</nuxt-link>
         </nav>
         <div class="socials">
           <h4>Réseaux sociaux</h4>
