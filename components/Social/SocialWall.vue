@@ -8,52 +8,52 @@
     </div>
 
     <div class="posts">
-      <a class="post" href="#" target="blank">
+      <a class="post" href="https://www.facebook.com/lausanneesports" target="blank">
         <span><i class="icon-facebook" /></span>
       </a>
-      <a class="post dark-blue" href="#" target="blank">
+      <a class="post dark-blue" href="https://www.instagram.com/p/BjSIbA1ADsE/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/2.jpg);"
         />
       </a>
-      <a class="post dark-blue" href="#" target="blank">
+      <a class="post dark-blue" href="https://twitter.com/lausanneesports" target="blank">
         <span><i class="icon-twitter" /></span>
       </a>
-      <a class="post w-double dark-blue" href="#" target="blank">
+      <a class="post w-double dark-blue" href="https://www.instagram.com/p/BjbsTp9gxTk/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/1.jpg);"
         />
       </a>
-      <a class="post w-double dark-blue" href="#" target="blank">
+      <a class="post w-double dark-blue" href="https://www.instagram.com/p/BjN2D0vgBYE/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/3.jpg);"
         />
       </a>
-      <a class="post white" href="#" target="blank">
+      <a class="post white" href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank">
         <span><i class="icon-youtube" /></span>
       </a>
-      <a class="post" href="#" target="blank">
+      <a class="post" href="https://www.twitch.tv/lausannetv" target="blank">
         <span><i class="icon-twitch" /></span>
       </a>
-      <a class="post dark-blue" href="#" target="blank">
+      <a class="post dark-blue" href="https://www.instagram.com/p/BkXQj31gXUF/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/4.jpg);"
         />
       </a>
-      <a class="post dark-blue" href="#" target="blank">
+      <a class="post dark-blue" href="https://www.instagram.com/p/Bi6ddSWg7HX/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/5.jpg);"
         />
       </a>
-      <a class="post" href="#" target="blank">
+      <a class="post" href="https://discord.gg/RZPDWSe" target="blank">
         <span><i class="icon-discord" /></span>
       </a>
-      <a class="post w-double dark-blue" href="#" target="blank">
+      <a class="post w-double dark-blue" href="https://www.instagram.com/p/BhleP40AWvM/" target="blank">
         <span
-          style="background-image: url(https://instagram.fgva1-1.fna.fbcdn.net/vp/dd06a532d2f2b22c3d0a950c661acab1/5C1D35A6/t51.2885-15/sh0.08/e35/s640x640/35616344_399165677260136_5850979873702543360_n.jpg);"
+          style="background-image: url(/images/ig/6.jpg);"
         />
       </a>
-      <a class="post dark-blue" href="#" target="blank">
+      <a class="post dark-blue" href="https://steamcommunity.com/groups/lausanne_esports" target="blank">
         <span><i class="icon-steam" /></span>
       </a>
     </div>
