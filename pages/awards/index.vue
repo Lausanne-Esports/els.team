@@ -27,89 +27,342 @@ export default {
   components: { AwardsGame },
 
   data: () => ({
-    games: [{
-      name: 'Overwatch',
-      code: 'ow',
-      awards: [{
-        result: 2,
-        name: 'Polylan #31',
-        lineup: 'eLS.Pachimari',
-        year: '2018'
-      },
-      {
-        result: 1,
-        name: 'Swiss Nationals (Prefire Season #2)',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 4,
-        name: 'Bâloise International Gaming Show',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 3,
-        name: 'Zurich Game Show',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 3,
-        name: 'SwitzerLAN',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 1,
-        name: 'OservCup',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 2,
-        name: 'Geneva Gaming Convention',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 2,
-        name: 'GGC Online',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 1,
-        name: 'Swiss Gaming Challenge',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      },
-      {
-        result: 1,
-        name: 'Polylan #29',
-        lineup: 'eLS.Pachimari',
-        year: '2017'
-      }]
-    },
+    games: [
     {
       name: 'Hearthstone',
       code: 'hs',
-      awards: []
+      awards: [
+        {
+          result: 1,
+          name: 'G4 2018',
+          lineup: 'Hypno',
+          year: '2018'
+        },
+        {
+          result: 6,
+          name: 'Gamers Assembly',
+          lineup: 'younTheory',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'ArmaCup Février',
+          lineup: 'Hypno',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'Gaming WinterFest',
+          lineup: 'Bozo',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'Swiss Nationals (Prefire Season #1)',
+          lineup: 'Hypno',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'SwitzerLAN',
+          lineup: 'Hypno',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'Geneva Gaming Convention',
+          lineup: 'younTheory',
+          year: '2017'
+        },
+        {
+          result: 4,
+          name: 'Gamers Assembly',
+          lineup: 'younTheory',
+          year: '2017'
+        },
+        {
+          result: 8,
+          name: 'Gamers Assembly',
+          lineup: 'Hypno',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'QwertzStone Season #1',
+          lineup: 'younTheory',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'G4 Lan',
+          lineup: 'Hypno',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'G4 Lan',
+          lineup: 'younTheory',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss IeSF Qualifier',
+          lineup: 'younTheory',
+          year: '2016'
+        },
+        {
+          result: 1,
+          name: 'Geneva Gaming Convention',
+          lineup: 'Bozo',
+          year: '2016'
+        },
+        {
+          result: 6,
+          name: 'Dreamhack FR',
+          lineup: 'Larssonax',
+          year: '2016'
+        },
+        {
+          result: 1,
+          name: 'PolyLAN',
+          lineup: 'Bozo',
+          year: '2016'
+        },
+        {
+          result: 1,
+          name: 'Swiss IeSF Qualifier',
+          lineup: 'younTheory',
+          year: '2015'
+        }
+      ]
     },
     {
       name: 'League of Legends',
       code: 'lol',
-      awards: []
+      awards: [
+        {
+          result: 3,
+          name: 'PolyLAN #31',
+          lineup: 'eLS.Indigo',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'King Of Nordic',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss Nationals (Prefire Season #2)',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'Zurich Game Show',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss Masters',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Logitech Autumn Cup',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'Geneva Gaming Convention',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss IeSF Qualifier',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Prefire Season #1',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'GGC Online',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'EEvent',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss SMP Invitational',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss Gaming Challenge',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'PolyLAN',
+          lineup: 'eLS.Navy',
+          year: '2017'
+        },
+      ]
+    },
+    {
+      name: 'Overwatch',
+      code: 'ow',
+      awards: [
+        {
+          result: 2,
+          name: 'Polylan #31',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'Swiss Nationals (Prefire Season #2)',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 4,
+          name: 'Bâloise International Gaming Show',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'Zurich Game Show',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 3,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'OservCup',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'Geneva Gaming Convention',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'GGC Online',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Swiss Gaming Challenge',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        },
+        {
+          result: 1,
+          name: 'Polylan #29',
+          lineup: 'eLS.Pachimari',
+          year: '2017'
+        }
+      ]
     },
     {
       name: 'Counter-Strike',
       code: 'csgo',
-      awards: []
+      awards: [
+        {
+          result: 1,
+          name: 'Geneva Gaming Convention',
+          lineup: 'eLS.Pulse',
+          year: '2016'
+        },
+        {
+          result: 4,
+          name: 'Swiss Nationals (NetGame)',
+          lineup: 'eLS.Pulse',
+          year: '2015'
+        },
+        {
+          result: 4,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Pulse',
+          year: '2015'
+        },
+      ]
     },
     {
       name: 'Rocket League',
       code: 'rl',
-      awards: []
+      awards: [
+        {
+          result: 2,
+          name: 'PolyLAN #31',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'Geneva Gaming Convention',
+          lineup: 'eLS.InFlames',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'Prefire Cup',
+          lineup: 'eLS.Kiss',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'GGC Online',
+          lineup: 'eLS.Kiss',
+          year: '2017'
+        },
+        {
+          result: '3-4',
+          name: 'Swiss Gaming Challenge',
+          lineup: 'eLS.Kiss',
+          year: '2017'
+        },
+        {
+          result: 2,
+          name: 'PolyLAN',
+          lineup: 'eLS.Kiss',
+          year: '2017'
+        },
+      ]
     }],
   }),
 

@@ -57,13 +57,15 @@
     margin-right: 15px;
     width: 50px;
     height: 50px;
-    line-height: 46px;
-    font-size: 20px;
+    line-height: 43px;
+    font-size: 26px;
+    font-weight: bold;
     text-align: center;
     border: 3px solid $blue;
     border-radius: 50%;
 
     &.top1, &.top2, &.top3 {
+      line-height: 50px;
       font-size: 28px;
       border: none;
     }
@@ -87,7 +89,7 @@
     h3 {
       margin: 0px;
       line-height: 1em;
-      font-size: 24px;
+      font-size: 22px;
       font-style: italic;
       text-transform: uppercase;
     }
