@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .categories-filter {
+    height: 80px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}

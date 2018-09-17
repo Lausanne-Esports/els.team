@@ -14,7 +14,7 @@ article.single {
 
     h1 {
       margin-bottom: 0px;
-      line-height: 64px;
+      line-height: 1em;
       font-size: 64px;
       font-style: italic;
       letter-spacing: 3px;
@@ -233,4 +233,41 @@ article.single {
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  article.single {
+    header {
+      h1 {
+        font-size: 32px;
+      }
+
+      .sub-title {
+        margin-top: 10px;
+        line-height: 1em;
+        font-size: 24px;
+      }
+    }
+
+    .body {
+      figure {
+        &.left, &.right, &.center {
+          float: none;
+          margin-left: 0px;
+          margin-right: 0px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &.wild {
+          margin-left: -15px;
+          width: calc(100% + 30px);
+        }
+      }
+    }
+  }
+
 }

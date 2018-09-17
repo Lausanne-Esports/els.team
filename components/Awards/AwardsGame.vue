@@ -5,7 +5,7 @@
       <div class="picture" :class="game.code"></div>
     </div>
     <div class="awards">
-      <award-item :award="award" v-for="award in game.awards" :key="award.name"></award-item>
+      <award-item :award="award" v-for="(award, index) in game.awards" :key="index"></award-item>
     </div>
   </div>
 </template>

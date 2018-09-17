@@ -41,6 +41,7 @@ export default {
 
   @import '~/assets/sass/core/variables.scss';
   @import '~/assets/sass/core/webfont.scss';
+  @import '~/assets/sass/core/base.scss';
 
   @import '~/assets/sass/ui/wrappers.scss';
 

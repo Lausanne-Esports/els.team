@@ -104,3 +104,27 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .award-game {
+    .header {
+      h2 {
+        font-size: 24px;
+
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .award-item {
+    .infos {
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+
+}

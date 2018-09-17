@@ -14,7 +14,7 @@
           <h2>News</h2>
           <nuxt-link to="/articles" class="read-more">Toutes les news <i class="icon-arrow-right" /></nuxt-link>
         </div>
-        <div class="row mt-3" v-if="!processingRequest">
+        <div class="row mt-3">
           <div class="col-md-4 ">
             <featured-article-card :article="lastArticle"></featured-article-card>
           </div>
