@@ -1,7 +1,7 @@
 <template>
   <div>
     <els-headline />
-    <els-last-matchs />
+    <!-- <els-last-matchs /> -->
     <els-home-article-list />
     <section class="wrapper light pt-5 pb-5">
       <div class="container">

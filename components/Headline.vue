@@ -30,7 +30,7 @@ export default {
 
   .headlines {
     position: absolute;
-    top: -120px;
+    top: -250px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -40,10 +40,12 @@ export default {
 
   @media screen and (max-width: 768px) {
     #headlines-wrapper {
-      padding: 60px;
+      margin-bottom: 0px;
+      padding: 80px;
     }
 
     .headlines {
+      top: -120px;
       height: $sm-headlines-block-height;
     }
   }

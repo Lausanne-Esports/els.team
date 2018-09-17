@@ -2,6 +2,9 @@
   <header class="main" :class="{ compact: compact }">
     <div class="nav-bar">
       <div class="container d-flex justify-content-between">
+        <div class="hamburger" @click="toggleMenu">
+          <div class="meat"></div>
+        </div>
         <nav class="top-nav">
           <nuxt-link to="/">Accueil</nuxt-link>
           <nuxt-link to="/articles">News</nuxt-link>
@@ -36,6 +39,11 @@ export default {
       default: false,
     },
   },
+  methods: {
+    toggleMenu() {
+      this.$emit('toggle-mobile-menu');
+    }
+  }
 }
 </script>
 

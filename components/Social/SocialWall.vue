@@ -4,7 +4,7 @@
       <div class="d-flex">
         <h2>Réseaux sociaux</h2>
       </div>
-      <a class="read-more">Plus d'images <i class="icon-arrow-right" /></a>
+      <!--<a class="read-more">Plus d'images <i class="icon-arrow-right" /></a>-->
     </div>
 
     <div class="posts">

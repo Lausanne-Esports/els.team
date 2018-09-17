@@ -1,6 +1,7 @@
 <template>
   <div>
-    <els-header />
+    <els-mobile-menu :open="mobileMenuOpen" @close="toggleMenu" />
+    <els-header @toggle-mobile-menu="toggleMenu" />
     <nuxt/>
     <els-sponsors />
     <els-footer />
@@ -13,14 +14,26 @@ import Header from './Header.vue'
 import Footer from './Footer.vue'
 import Sponsors from './Sponsors.vue'
 import Copyright from './Copyright.vue'
+import MobileMenu from '../components/Navigations/MobileMenu';
 
 export default {
   components: {
     'els-header': Header,
     'els-footer': Footer,
+    'els-mobile-menu': MobileMenu,
     'els-sponsors': Sponsors,
     'els-copyright': Copyright,
   },
+  data() {
+    return {
+      mobileMenuOpen: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
+    }
+  }
 }
 </script>
 
