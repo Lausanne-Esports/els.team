@@ -10,7 +10,7 @@
           <nuxt-link to="/articles">News</nuxt-link>
           <nuxt-link to="/structure">Structure</nuxt-link>
           <nuxt-link to="/awards">Palmarès</nuxt-link>
-          <nuxt-link to="#">Contact</nuxt-link>
+          <nuxt-link to="/contact">Contact</nuxt-link>
         </nav>
         <nav class="lang-nav">
           <a href="#">FR</a> / <a href="#">EN</a>

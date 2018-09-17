@@ -4,13 +4,8 @@
   "description": "Source code of els.team",
   "author": "Romain Lanz <romain.lanz@slynova.ch>",
   "private": true,
-  "config": {
-    "nuxt": {
-      "port": "3333"
-    }
-  },
   "scripts": {
-    "dev": "cross-env PORT=3333 nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

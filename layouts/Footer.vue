@@ -11,22 +11,20 @@
             1803 Chardonne Suisse / Vaud</p>
         </div>
         <nav class="footer-nav">
-          <a href="#">Accueil</a>
-          <a href="#">News</a>
-          <a href="#">Résultats</a>
-          <a href="#">Structure</a>
-          <a href="#">Palmarès</a>
-          <a href="#">Médias</a>
-          <a href="#">Contact</a>
+          <a href="/">Accueil</a>
+          <a href="/articles">News</a>
+          <a href="/structure">Structure</a>
+          <a href="/awards">Palmarès</a>
+          <a href="/contact">Contact</a>
         </nav>
         <div class="socials">
           <h4>Réseaux sociaux</h4>
-          <a href="#" target="blank"><i class="icon-facebook" /> Facebook</a>
-          <a href="#" target="blank"><i class="icon-twitter" /> Twitter</a>
-          <a href="#" target="blank"><i class="icon-youtube" /> Youtube</a>
-          <a href="#" target="blank"><i class="icon-twitch" /> Twitch</a>
-          <a href="#" target="blank"><i class="icon-discord" /> Discord</a>
-          <a href="#" target="blank"><i class="icon-steam" /> Steam</a>
+          <a href="https://www.facebook.com/lausanneesports" target="blank"><i class="icon-facebook" /> Facebook</a>
+          <a href="https://twitter.com/lausanneesports" target="blank"><i class="icon-twitter" /> Twitter</a>
+          <a href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank"><i class="icon-youtube" /> Youtube</a>
+          <a href="https://www.twitch.tv/lausannetv" target="blank"><i class="icon-twitch" /> Twitch</a>
+          <a href="https://discord.gg/RZPDWSe" target="blank"><i class="icon-discord" /> Discord</a>
+          <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank"><i class="icon-steam" /> Steam</a>
         </div>
         <div class="sesf align-md-self-end">
           <img src="~/assets/images/sesf.png">

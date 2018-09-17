@@ -2,7 +2,7 @@
   <div class="wrapper darker-blue">
     <div class="container copyright pb-4 pt-4 d-flex justify-content-between">
       <p class="els">2018 &copy; Lausanne-Sport eSports</p>
-      <p>Design: <a href="#">Louis "biip" Burgard</a></p>
+      <p>Design: <a href="http://louisburgard.com/" target="blank">Louis "biip" Burgard</a></p>
     </div>
   </div>
 </template>
