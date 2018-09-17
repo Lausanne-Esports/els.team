@@ -1,7 +1,7 @@
 <template>
   <div>
     <els-mobile-menu :open="mobileMenuOpen" @close="toggleMenu" />
-    <els-header @toggle-mobile-menu="toggleMenu" />
+    <els-header :compact="true" @toggle-mobile-menu="toggleMenu" />
     <nuxt/>
     <els-sponsors />
     <els-footer />

@@ -1,0 +1,104 @@
+.award-game {
+  margin-bottom: 30px;
+  background: $white;
+
+  .header {
+    padding: 0px 30px;
+    position: relative;
+    height: 80px;
+    color: $white;
+    background: $dark-blue;
+
+    h2 {
+      position: relative;
+      line-height: 80px;
+      font-size: 32px;
+      font-style: italic;
+      text-transform: uppercase;
+      z-index: 999;
+
+      i {
+        display: inline-block;
+        margin-top: -8px;
+        margin-right: 15px;
+        color: $blue;
+        font-size: 40px;
+        vertical-align: middle;
+      }
+    }
+
+    .picture {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background-size: cover;
+      background-position: center center;
+      opacity: 0.3;
+      @each $game in $games {
+        &.#{$game} {
+          background-image: url('~/assets/images/games/#{$game}.png');
+        }
+      }
+    }
+  }
+}
+
+.award-item {
+  padding: 0px 15px;
+  border-bottom: 1px solid $gray;
+
+  &:last-of-type {
+    border-bottom: 0px;
+  }
+
+  .result {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid $blue;
+    border-radius: 50%;
+
+    &.top1, &.top2, &.top3 {
+      font-size: 28px;
+      border: none;
+    }
+
+    &.top1 {
+      color: #ffd600;
+    }
+
+    &.top2 {
+      color: #c2c3c5;
+    }
+
+    &.top3 {
+      color: #d7a138;
+    }
+  }
+
+  .infos {
+    padding: 10px 0px;
+
+    h3 {
+      margin: 0px;
+      line-height: 1em;
+      font-size: 24px;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .lineup {
+      margin: 0px;
+    }
+
+    .year {
+      margin: 0px;
+      color: $dark-purple-blue;
+    }
+  }
+}

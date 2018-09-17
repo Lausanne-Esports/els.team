@@ -8,16 +8,8 @@
         <nav class="top-nav">
           <nuxt-link to="/">Accueil</nuxt-link>
           <nuxt-link to="/articles">News</nuxt-link>
-          <nuxt-link to="#">Résultats</nuxt-link>
-          <div class="sub-menu">
-            <nuxt-link to="#">League of Legends</nuxt-link>
-            <nuxt-link to="#">Overwatch</nuxt-link>
-            <nuxt-link to="#">Rocket League</nuxt-link>
-            <nuxt-link to="#">Fifa</nuxt-link>
-          </div>
           <nuxt-link to="/structure">Structure</nuxt-link>
-          <nuxt-link to="#">Palmarès</nuxt-link>
-          <nuxt-link to="#">Médias</nuxt-link>
+          <nuxt-link to="/awards">Palmarès</nuxt-link>
           <nuxt-link to="#">Contact</nuxt-link>
         </nav>
         <nav class="lang-nav">

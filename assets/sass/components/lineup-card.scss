@@ -17,11 +17,11 @@
     z-index: 0;
   }
 
-  @each $lineup in $lineups {
+  @each $game in $games {
 
-    &.#{$lineup} {
+    &.#{$game} {
       .bg-image {
-        background-image: url('~/assets/images/lineup/#{$lineup}.png');
+        background-image: url('~/assets/images/games/#{$game}.png');
       }
     }
 

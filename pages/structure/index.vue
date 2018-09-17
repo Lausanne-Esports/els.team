@@ -20,7 +20,7 @@
 import StructureCard from '@/components/Structure/StructureCard'
 
 export default {
-  layout: 'article',
+  layout: 'page',
 
   components: { StructureCard },
 
