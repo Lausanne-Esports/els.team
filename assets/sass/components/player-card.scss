@@ -1,11 +1,15 @@
-.player-card {
+.player-card-wrapper {
   margin-bottom: 30px;
+}
+
+.player-card {
+  height: 100%;
   border-bottom: 2px solid $blue;
   background: $white;
 
   .picture {
     position: relative;
-    height: 390px;
+    height: 360px;
     background: url('~/assets/images/background_player.jpg');
     background-size: cover;
 

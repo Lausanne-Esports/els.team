@@ -10,7 +10,7 @@
 
     <div class="container body">
       <div class="row">
-        <div class="col-6 col-lg-4" v-for="player in team.players" :key="player.id">
+        <div class="player-card-wrapper col-6 col-lg-4" v-for="player in team.players" :key="player.id">
           <player-card :player="player"></player-card>
         </div>
       </div>
@@ -22,7 +22,7 @@
 import PlayerCard from '@/components/Players/PlayerCard'
 
 export default {
-  layout: 'article',
+  layout: 'page',
 
   components: { PlayerCard },
 
