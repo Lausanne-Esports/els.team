@@ -145,10 +145,52 @@ article.single {
       line-height: $line-height;
     }
 
+    figure {
+      margin-bottom: $paragraph-space;
+
+      &.left {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 0px;
+      }
+
+      &.right {
+        float: right;
+        margin-left: 30px;
+      }
+
+      &.center {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &.fluid {
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &.wild {
+        margin-left: -(100% / 12);
+        width: calc(100% + ((100% / 12) * 2));
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      img {
+        margin-bottom: 0px;
+      }
+    }
+
     img {
       margin-bottom: $paragraph-space;
-      max-width: 100%;
-      height: auto;
     }
 
     ul, ol {
@@ -166,6 +208,14 @@ article.single {
 
       p {
         margin-bottom: 0px;
+      }
+
+      .blockquote-footer {
+        margin-top: 5px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+        text-transform: uppercase
       }
     }
   }
