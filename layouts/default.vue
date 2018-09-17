@@ -67,4 +67,9 @@ export default {
       text-decoration: none;
     }
   }
+
+  img.fluid {
+    width: 100%;
+    height: auto;
+  }
 </style>

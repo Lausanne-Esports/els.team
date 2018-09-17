@@ -3,6 +3,7 @@
     <els-headline />
     <!-- <els-last-matchs /> -->
     <els-home-article-list />
+    <els-ads />
     <section class="wrapper light pt-5 pb-5">
       <div class="container">
         <els-social-wall />
@@ -16,6 +17,7 @@ import Headline from '~/components/Headline'
 import LastMatchs from '~/components/Match/LastMatchs'
 import HomeArticleList from '~/components/Article/HomeArticleList'
 import SocialWall from '~/components/Social/SocialWall'
+import Ads from '~/components/Ads/adsSection';
 
 export default {
   layout: 'default',
@@ -24,6 +26,7 @@ export default {
     'els-last-matchs': LastMatchs,
     'els-home-article-list': HomeArticleList,
     'els-social-wall': SocialWall,
+    'els-ads': Ads,
   },
 }
 </script>

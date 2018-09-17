@@ -1,20 +1,31 @@
 <template>
   <section class="wrapper darker-blue pt-5 pb-5">
-    <div class="container sponsors d-sm-flex justify-content-center align-items-center">
-      <a href="#" target="blank"><img src="~/assets/images/sponsors/andros.svg"></a>
-      <a href="#" target="blank"><img src="~/assets/images/sponsors/barriere.svg"></a>
-      <a href="#" target="blank"><img src="~/assets/images/sponsors/eizo.svg"></a>
-      <a href="#" target="blank"><img src="~/assets/images/sponsors/tcm.svg"></a>
-      <a href="#" target="blank"><img src="~/assets/images/sponsors/slynova.svg"></a>
+    <div class="container sponsors">
+      <a href="https://www.andros.ch/" target="blank" class="main"><img src="~/assets/images/sponsors/andros.svg"></a>
+      <a href="https://www.casinosbarriere.com/fr/montreux.html" target="blank" class="main"><img src="~/assets/images/sponsors/barriere.svg"></a><br />
+      <a href="http://gaming.eizo.com/" target="blank"><img src="~/assets/images/sponsors/eizo.svg"></a>
+      <a href="http://tech-center.ch/" target="blank"><img src="~/assets/images/sponsors/tcm.svg"></a>
+      <a href="https://slynova.ch/" target="blank"><img src="~/assets/images/sponsors/slynova.svg"></a>
     </div>
   </section>
 </template>
 <style lang="scss" scoped>
   @import '~/assets/sass/core/variables.scss';
   .sponsors {
-    img {
-      margin: 0px 50px;
+    text-align: center;
+    a {
+      display: inline-block;
+      margin: 0px 30px;
+      margin-bottom: 30px;
       width: 150px;
+
+      &.main {
+        width: 300px;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -23,16 +34,13 @@
       text-align: center;
 
       a:last-of-type {
-        img {
-          margin-bottom: 0px;
-        }
+        margin-bottom: 0px;
       }
 
       img {
         display: inline-block;
         margin-bottom: 30px;
       }
-
     }
   }
 </style>

@@ -5,8 +5,8 @@
       <nuxt-link to="/">Accueil</nuxt-link>
       <nuxt-link to="/articles">News</nuxt-link>
       <nuxt-link to="/structure">Structure</nuxt-link>
-      <nuxt-link to="#">Palmarès</nuxt-link>
-      <nuxt-link to="#">Contact</nuxt-link>
+      <nuxt-link to="/awards">Palmarès</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
     </nav>
   </div>
 </template>
