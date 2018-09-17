@@ -48,6 +48,34 @@
   > .body {
     padding-top: ($paragraph-space * 2);
     font-size: $paragraph-size;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .page {
+    header {
+      padding-top: 100px;
+      height: auto;
+
+      h1 {
+        line-height: 1em;
+        font-size: 32px;
+      }
+
+      .sub-title {
+        margin-top: 10px;
+        line-height: 1em;
+        font-size: 24px;
+      }
+    }
+
+    .container {
+      &.body {
+        padding-top: 40px;
+      }
+    }
 
   }
+
 }

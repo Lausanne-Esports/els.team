@@ -1,7 +1,7 @@
 <template>
   <footer class="wrapper dark-blue pt-5 pb-5">
     <div class="container">
-      <div class="d-md-flex justify-md-content-between">
+      <div class="d-md-flex justify-content-between">
         <div class="infos">
           <img src="~/assets/images/logo_footer.png" class="mb-3">
           <p class="els">Lausanne-Sport<br>
