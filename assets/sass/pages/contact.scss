@@ -1,0 +1,26 @@
+.form-contact {
+  margin-bottom: 80px;
+
+  label {
+    color: $dark-purple-blue;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  input, textarea {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $blue;
+    background: $white;
+  }
+
+  button {
+    padding: 10px;
+    color: $white;
+    border: none;
+    background: $blue;
+  }
+}
