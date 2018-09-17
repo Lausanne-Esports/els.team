@@ -34,6 +34,18 @@
     right: 30px;
   }
 
+  .academy {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    padding-left: 30px;
+    padding-right: 15px;
+    color: $white;
+    font-style: italic;
+    text-transform: uppercase;
+    background: $blue;
+  }
+
   .players {
     margin-bottom: 15px;
     color: $blue;
