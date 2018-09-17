@@ -21,7 +21,8 @@ export default {
   },
   watch: {
     '$route': function(newValue) {
-      this.$emit('close');
+      if(this.open)
+        this.$emit('close');
     }
   }
 }
