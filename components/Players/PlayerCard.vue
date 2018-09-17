@@ -1,16 +1,16 @@
 <template>
   <div class="player-card">
     <div class="picture">
-      <img :src="player.picture" />
+      <img :src="picture" />
     </div>
     <div class="body">
       <label>Nom / Pseudo</label>
-      <div class="fullname">{{ player.firstname }} {{ player.lastname }}</div>
-      <h2>{{ player.username }}</h2>
+      <div class="fullname">{{ fullname }}</div>
+      <h2>{{ player.nickname }}</h2>
       <label>Rôle</label>
       <p class="role">{{ player.role }}</p>
-      <div class="socials" v-if="socials">
-        <a v-for="social in socials" :key="social.type" :href="social.url"><i :class="'icon-' + social.type"></i></a>
+      <div class="socials">
+        <a v-for="social in socials" :key="social.type" v-if="social.url" :href="social.url"><i :class="'icon-' + social.type"></i></a>
       </div>
     </div>
   </div>
@@ -21,6 +21,17 @@ export default {
   props: ['player'],
 
   computed: {
+    fullname () {
+      return `${this.player.firstname || ''} ${this.player.lastname || ''}`.trim()
+    },
+
+    picture () {
+      if (this.player.picture) {
+        return this.player.picture
+      }
+
+      return '/images/players/default.png'
+    }
   },
 }
 </script>
