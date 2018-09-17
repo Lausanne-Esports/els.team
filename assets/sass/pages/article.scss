@@ -142,6 +142,10 @@ article.single {
         height: 0px;
         border-bottom: 1px solid $darker-gray;
       }
+
+      .icon-link {
+        display: none;
+      }
     }
 
     h3 {
