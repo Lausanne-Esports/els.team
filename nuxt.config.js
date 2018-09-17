@@ -32,7 +32,7 @@ module.exports = {
 
   axios: {
     credentials: true,
-    proxyHeaders: true,
+    proxyHeaders: false,
   },
 
   // Build configuration
