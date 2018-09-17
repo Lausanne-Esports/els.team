@@ -13,9 +13,9 @@
       <div class="container d-flex">
         <div class="socials">
           <i class="icon-share" />
-          <a :href="twitterShareUrl" target="blank"><i class="icon-twitter" /></a>
-          <a :href="facebookShareUrl" target="blank"><i class="icon-facebook" /></a>
-          <a href="#" target="blank"><i class="icon-reddit" /></a>
+          <a :href="twitterShareUrl" target="_blank"><i class="icon-twitter" /></a>
+          <a :href="facebookShareUrl" target="_blank"><i class="icon-facebook" /></a>
+          <a href="#" target="_blank"><i class="icon-reddit" /></a>
         </div>
 
         <div class="lang-menu" v-if="article.translations.length > 0">
@@ -34,49 +34,62 @@
 <script>
 export default {
   layout: 'article',
-  components: {
 
-  },
-  data () {
+  data: () => ({
+    article: {},
+    lang: 'fr',
+  }),
+
+  head () {
     return {
-      article: {},
-      lang: 'fr',
+      title: `${this.article.headline} | Lausanne Sport eSports`,
+      meta: [
+        { hid: 'description', name: 'description', content: this.article.description },
+      ],
     }
   },
-  async asyncData({ params, query, error, $axios }) {
+
+  async asyncData ({ params, query, error, $axios }) {
     try {
-      const [id, slug] = params.id.split('-');
-      const lang = query.lang || 'fr';
+      const [id] = params.id.split('-')
+      const lang = query.lang || 'fr'
 
-      const article = await $axios.$get('/articles/' + id + "?lang=" + lang);
+      const article = await $axios.$get(`/articles/${id}?lang=${lang}`)
 
-      return { article, lang };
+      return { article, lang }
     } catch(e) {
       error({ message: 'Article not found', statusCode: 404 });
     }
   },
+
   computed: {
-    thumbnail() {
+    thumbnail () {
       return this.article.thumbnail || '~/assets/images/header_bg.jpg';
     },
-    twitterShareUrl() {
-      return 'https://twitter.com/intent/tweet?text=' + this.article.headline + " https://els.team" + this.$route.path;
+
+    twitterShareUrl () {
+      return `https://twitter.com/intent/tweet?text=${this.article.headline} https://els.team${this.$route.path}`
     },
-    facebookShareUrl() {
-      return 'https://www.facebook.com/sharer/sharer.php?u=https://www.els.team' + this.$route.path;
+
+    facebookShareUrl () {
+      return `https://www.facebook.com/sharer/sharer.php?u=https://www.els.team${this.$route.path}`
     },
-    frUrl() {
-      return this.$route.path + '?lang=fr';
+
+    frUrl () {
+      return `${this.$route.path}?lang=fr`
     },
-    enUrl() {
-      return this.$route.path + '?lang=en';
+
+    enUrl () {
+      return `${this.$route.path}?lang=en`
     },
   },
+
   methods: {
-    async langChanged(lang) {
+    async langChanged (lang) {
       this.article = await this.$axios.$get('/articles/' + this.article.id + "?lang=" + lang);
     }
   },
+
   watch: {
     '$route': function(newValue) {
       this.lang = newValue.query.lang;
