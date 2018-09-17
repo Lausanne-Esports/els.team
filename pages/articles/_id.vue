@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  layout: 'article',
+  layout: 'page',
 
   data: () => ({
     article: {},

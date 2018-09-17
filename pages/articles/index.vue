@@ -26,7 +26,7 @@ import ArticleCard from '@/components/Article/ArticleCard'
 import CategoriesFilter from '@/components/Article/Categories/CategoriesFilter'
 
 export default {
-  layout: 'article',
+  layout: 'page',
 
   components: { ArticleCard, CategoriesFilter },
 

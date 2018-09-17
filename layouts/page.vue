@@ -1,39 +1,36 @@
 <template>
   <div>
-    <els-mobile-menu :open="mobileMenuOpen" @close="toggleMenu" />
-    <els-header :compact="true" @toggle-mobile-menu="toggleMenu" />
-    <nuxt/>
-    <els-sponsors />
-    <els-footer />
-    <els-copyright />
+    <mobile-menu :open="mobileMenuOpenStatus" @close="toggleMenu"></mobile-menu>
+    <main-header :compact="true" @toggle-mobile-menu="toggleMenu"></main-header>
+    <nuxt />
+    <main-footer></main-footer>
+    <copyright-block></copyright-block>
   </div>
 </template>
 
 <script>
-import Header from './Header.vue'
-import Footer from './Footer.vue'
-import Sponsors from './Sponsors.vue'
-import Copyright from './Copyright.vue'
-import MobileMenu from '../components/Navigations/MobileMenu';
+import MainHeader from '@/components/Layout/MainHeader'
+import MainFooter from '@/components/Layout/MainFooter'
+import MobileMenu from '@/components/Navigations/MobileMenu'
+import CopyrightBlock from '@/components/Layout/CopyrightBlock'
 
 export default {
   components: {
-    'els-header': Header,
-    'els-footer': Footer,
-    'els-mobile-menu': MobileMenu,
-    'els-sponsors': Sponsors,
-    'els-copyright': Copyright,
+    CopyrightBlock,
+    MainFooter,
+    MainHeader,
+    MobileMenu,
   },
-  data() {
-    return {
-      mobileMenuOpen: false
-    }
-  },
+
+  data: () => ({
+    mobileMenuOpenStatus: false,
+  }),
+
   methods: {
-    toggleMenu() {
-      this.mobileMenuOpen = !this.mobileMenuOpen;
+    toggleMenu () {
+      this.mobileMenuOpenStatus = !this.mobileMenuOpenStatus
     }
-  }
+  },
 }
 </script>
 
