@@ -9,8 +9,8 @@
       <h2>{{ player.nickname }}</h2>
       <label>Rôle</label>
       <p class="role">{{ player.role }}</p>
-      <div class="socials">
-        <a v-for="social in socials" :key="social.type" v-if="social.url" :href="social.url"><i :class="'icon-' + social.type"></i></a>
+      <div class="socials" v-if="player.socials.length > 0">
+        <a v-for="social in socials" :key="social.type" :href="social.url"><i :class="'icon-' + social.type"></i></a>
       </div>
     </div>
   </div>
