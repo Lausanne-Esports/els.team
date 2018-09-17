@@ -30,7 +30,7 @@
 
     .fullname, .role {
       margin: 0px;
-      line-height: 23px;
+      line-height: 1em;
       color: $dark-blue;
       font-size: 23px;
       font-weight: bold;
@@ -40,7 +40,7 @@
 
     h2 {
       margin-bottom: 15px;
-      line-height: 40px;
+      line-height: 1em;
       color: $blue;
       font-size: 40px;
       font-weight: bold;
@@ -61,6 +61,32 @@
 
     a {
       padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player-card {
+    .picture {
+      padding-top: 100%;
+      height: auto;
+    }
+
+    .body {
+      padding: 15px;
+
+      .fullname {
+        font-size: 18px;
+      }
+
+      h2 {
+        margin-top: 5px;
+        font-size: 22px;
+      }
+
+      .role {
+        font-size: 16px;
+      }
     }
   }
 }

@@ -5,7 +5,8 @@
         <div class="bg-image"></div>
         <div class="body">
           <div class="players">{{ team.numberOfPlayers }} joueurs</div>
-          <h2>{{ team.name }}</h2>
+          <h2>{{ team.category.name }}
+          <span v-if="team.name" class="name"><br />{{ team.name }}</span></h2>
           <p class="read-more">En savoir plus <i class="icon-arrow-right" /></p>
         </div>
       </div>
