@@ -10,7 +10,7 @@
       <label>Rôle</label>
       <p class="role">{{ player.role }}</p>
       <div class="socials" v-if="player.socials.length > 0">
-        <a v-for="social in socials" :key="social.type" :href="social.url"><i :class="'icon-' + social.type"></i></a>
+        <a v-for="social in player.socials" :key="social.type" :href="social.url"><i :class="'icon-' + social.type"></i></a>
       </div>
     </div>
   </div>
