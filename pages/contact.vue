@@ -9,21 +9,21 @@
     </header>
 
     <div class="container body">
-      <form action="#" method="POST" class="form-contact">
+      <form @submit.prevent="sendEmail" method="POST" class="form-contact">
         <div class="form-input">
           <label>Titre :</label>
-          <input type="text" name="title">
+          <input type="text" name="title" v-model="form.title">
         </div>
         <div class="form-input">
           <label>Email :</label>
-          <input type="email" name="email">
+          <input type="email" name="email" v-model="form.email">
         </div>
         <div class="form-input">
           <label>Message :</label>
-          <textarea name="message" rows="20"></textarea>
+          <textarea name="message" rows="20" v-model="form.message"></textarea>
         </div>
         <div class="form-input">
-          <button type="submit" class="">Envoyer</button>
+          <button type="submit">Envoyer</button>
         </div>
       </form>
     </div>
@@ -31,15 +31,31 @@
 </template>
 
 <script>
-export default {
-  layout: "page",
+import swal from 'sweetalert'
 
-  components: {},
+export default {
+  layout: 'page',
 
   data: () => ({
-    teams: []
-  })
-};
+    form: {
+      title: null,
+      email: null,
+      message: null,
+    },
+  }),
+
+  methods: {
+    async sendEmail () {
+      try {
+        this.$axios.$post('contact', this.form)
+        this.form = { title: null, email: null, message: null }
+        swal({ text: 'Votre message a été envoyé !', icon: 'success' })
+      } catch (e) {
+        swal({ text: 'Une erreur est survenue :(', icon: 'error' })
+      }
+    }
+  },
+}
 </script>
 
 <style lang="scss">
