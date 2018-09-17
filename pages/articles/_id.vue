@@ -9,12 +9,18 @@
         <p class="date">{{ article.published_at }}</p>
       </div>
     </header>
-    <div class="socials d-flex align-items-center">
-      <div class="container">
-        <i class="icon-share" />
-        <a :href="twitterShareUrl" target="blank"><i class="icon-twitter" /></a>
-        <a :href="facebookShareUrl" target="blank"><i class="icon-facebook" /></a>
-        <a href="#" target="blank"><i class="icon-reddit" /></a>
+    <div class="action-bar d-flex align-items-center">
+      <div class="container d-flex">
+        <div class="socials">
+          <i class="icon-share" />
+          <a :href="twitterShareUrl" target="blank"><i class="icon-twitter" /></a>
+          <a :href="facebookShareUrl" target="blank"><i class="icon-facebook" /></a>
+          <a href="#" target="blank"><i class="icon-reddit" /></a>
+        </div>
+
+        <div class="lang-menu" v-if="article.translations.length > 0">
+          <nuxt-link :to="frUrl" :class="{ current: lang=='fr'}">fr</nuxt-link> / <nuxt-link :to="enUrl" :class="{ current: lang=='en'}">en</nuxt-link>
+        </div>
       </div>
     </div>
     <div class="container body">
@@ -34,15 +40,17 @@ export default {
   data () {
     return {
       article: {},
+      lang: 'fr',
     }
   },
-  async asyncData({ params, error, $axios }) {
+  async asyncData({ params, query, error, $axios }) {
     try {
       const [id, slug] = params.id.split('-');
+      const lang = query.lang || 'fr';
 
-      const article = await $axios.$get('/articles/' + id + "?lang=fr");
+      const article = await $axios.$get('/articles/' + id + "?lang=" + lang);
 
-      return { article };
+      return { article, lang };
     } catch(e) {
       error({ message: 'Article not found', statusCode: 404 });
     }
@@ -56,6 +64,23 @@ export default {
     },
     facebookShareUrl() {
       return 'https://www.facebook.com/sharer/sharer.php?u=https://www.els.team' + this.$route.path;
+    },
+    frUrl() {
+      return this.$route.path + '?lang=fr';
+    },
+    enUrl() {
+      return this.$route.path + '?lang=en';
+    },
+  },
+  methods: {
+    async langChanged(lang) {
+      this.article = await this.$axios.$get('/articles/' + this.article.id + "?lang=" + lang);
+    }
+  },
+  watch: {
+    '$route': function(newValue) {
+      this.lang = newValue.query.lang;
+      this.langChanged(newValue.query.lang);
     }
   }
 }

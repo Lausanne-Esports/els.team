@@ -66,7 +66,7 @@ article.single {
     }
   }
 
-  .socials {
+  .action-bar {
     height: 80px;
     border-top: 1px solid darken($dark-purple-blue, 10);
     border-bottom: 3px solid darken($dark-purple-blue, 10);
@@ -79,8 +79,22 @@ article.single {
     }
 
     a {
+      display: inline-block;
+
       i {
         color: $blue;
+      }
+    }
+
+    .lang-menu {
+      a {
+        color: $dark-purple-blue;
+        font-style: italic;
+        text-transform: uppercase;
+
+        &.current {
+          color: $blue;
+        }
       }
     }
   }
