@@ -9,7 +9,7 @@
         <div class="title">
           <div class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</div>
           <h3>{{ translation.headline }}</h3>
-          <p class="date">{{ article.published_at }}</p>
+          <p class="date">{{ published_at }}</p>
         </div>
         <p class="read-more">Lire l'article <i class="icon-arrow-right" /></p>
       </section>
@@ -35,6 +35,9 @@ export default {
     thumbnail() {
       return this.article.thumbnail || '~/assets/images/header_bg.jpg';
     },
+    published_at() {
+      return this.article.published_at.split(' ')[0];
+    }
   },
 }
 </script>

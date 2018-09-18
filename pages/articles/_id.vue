@@ -6,7 +6,7 @@
         <p class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</p>
         <h1>{{ article.headline }}</h1>
         <p class="sub-title" v-if="article.subtitle">{{ article.subtitle }}</p>
-        <p class="date">{{ article.published_at }}</p>
+        <p class="date">{{ published_at }}</p>
       </div>
     </header>
     <div class="action-bar d-flex align-items-center">
@@ -84,6 +84,9 @@ export default {
     enUrl () {
       return `${this.$route.path}?lang=en`
     },
+    published_at() {
+      return this.article.published_at.split(' ')[0];
+    }
   },
 
   methods: {
