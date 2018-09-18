@@ -36,6 +36,30 @@ export default {
       awards: [
         {
           result: 1,
+          name: 'QwertzStone Édition Noël',
+          lineup: 'Bozo',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'Spring 2018',
+          lineup: 'Bozo',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'Spring 2018',
+          lineup: 'Hypno',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'Garden Party',
+          lineup: 'Bozo',
+          year: '2018'
+        },
+        {
+          result: 1,
           name: 'G4 2018',
           lineup: 'Hypno',
           year: '2018'
@@ -239,6 +263,30 @@ export default {
       code: 'ow',
       awards: [
         {
+          result: 3,
+          name: 'SESL Winter Season',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'ChablaisLAN',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'SESL Spring Season',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'Swiss Gaming Challenge',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
           result: 2,
           name: 'Polylan #31',
           lineup: 'eLS.Pachimari',
@@ -328,6 +376,18 @@ export default {
       name: 'Rocket League',
       code: 'rl',
       awards: [
+        {
+          result: 1,
+          name: 'RLRS Qualifier',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'Colosseum Qualifier',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
         {
           result: 2,
           name: 'PolyLAN #31',
