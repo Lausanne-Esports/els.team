@@ -24,6 +24,8 @@ import PlayerCard from '@/components/Players/PlayerCard'
 export default {
   layout: 'page',
 
+  scrollToTop: true,
+
   components: { PlayerCard },
 
   data: () => ({

@@ -35,6 +35,8 @@
 export default {
   layout: 'page',
 
+  scrollToTop: true,
+
   data: () => ({
     article: {},
     lang: 'fr',

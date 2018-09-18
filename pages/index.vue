@@ -50,6 +50,8 @@ import AdvertisementBlock from '@/components/Advertisement/AdvertisementBlock'
 export default {
   layout: 'home',
 
+  scrollToTop: true,
+
   components: {
     AdvertisementBlock,
     ArticleCard,

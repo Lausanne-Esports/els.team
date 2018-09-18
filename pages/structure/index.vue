@@ -22,6 +22,8 @@ import StructureCard from '@/components/Structure/StructureCard'
 export default {
   layout: 'page',
 
+  scrollToTop: true,
+
   components: { StructureCard },
 
   data: () => ({

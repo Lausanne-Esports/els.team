@@ -24,6 +24,8 @@ import AwardsGame from '@/components/Awards/AwardsGame'
 export default {
   layout: 'page',
 
+  scrollToTop: true,
+
   components: { AwardsGame },
 
   data: () => ({

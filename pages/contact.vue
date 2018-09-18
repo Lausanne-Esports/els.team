@@ -36,6 +36,8 @@ import swal from 'sweetalert'
 export default {
   layout: 'page',
 
+  scrollToTop: true,
+
   data: () => ({
     form: {
       title: null,
