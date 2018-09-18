@@ -8,7 +8,7 @@
     </div>
 
     <div class="posts">
-      <a class="post" href="https://www.facebook.com/lausanneesports" target="blank">
+      <a class="post facebook" href="https://www.facebook.com/lausanneesports" target="blank">
         <span><i class="icon-facebook" /></span>
       </a>
       <a class="post dark-blue" href="https://www.instagram.com/p/BjSIbA1ADsE/" target="blank">
@@ -16,7 +16,7 @@
           style="background-image: url(/images/ig/2.jpg);"
         />
       </a>
-      <a class="post dark-blue" href="https://twitter.com/lausanneesports" target="blank">
+      <a class="post twitter" href="https://twitter.com/lausanneesports" target="blank">
         <span><i class="icon-twitter" /></span>
       </a>
       <a class="post w-double dark-blue" href="https://www.instagram.com/p/BjbsTp9gxTk/" target="blank">
@@ -29,10 +29,10 @@
           style="background-image: url(/images/ig/3.jpg);"
         />
       </a>
-      <a class="post white" href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank">
+      <a class="post youtube" href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank">
         <span><i class="icon-youtube" /></span>
       </a>
-      <a class="post" href="https://www.twitch.tv/lausannetv" target="blank">
+      <a class="post twitch" href="https://www.twitch.tv/lausannetv" target="blank">
         <span><i class="icon-twitch" /></span>
       </a>
       <a class="post dark-blue" href="https://www.instagram.com/p/BkXQj31gXUF/" target="blank">
@@ -45,7 +45,7 @@
           style="background-image: url(/images/ig/5.jpg);"
         />
       </a>
-      <a class="post" href="https://discord.gg/RZPDWSe" target="blank">
+      <a class="post discord" href="https://discord.gg/RZPDWSe" target="blank">
         <span><i class="icon-discord" /></span>
       </a>
       <a class="post w-double dark-blue" href="https://www.instagram.com/p/BhleP40AWvM/" target="blank">
@@ -53,7 +53,7 @@
           style="background-image: url(/images/ig/6.jpg);"
         />
       </a>
-      <a class="post dark-blue" href="https://steamcommunity.com/groups/lausanne_esports" target="blank">
+      <a class="post steam" href="https://steamcommunity.com/groups/lausanne_esports" target="blank">
         <span><i class="icon-steam" /></span>
       </a>
     </div>
@@ -127,6 +127,30 @@ export default {
 
         &.dark-blue {
           background: $dark-blue;
+        }
+
+        &.youtube {
+          background: #ff0000;
+        }
+
+        &.twitch {
+          background: #6441A4;
+        }
+
+        &.twitter {
+          background: #4AB3F4;
+        }
+
+        &.facebook {
+          background: #4267b2;
+        }
+
+        &.steam {
+          background: #171a21;
+        }
+
+        &.discord {
+          background: #7289da;
         }
       }
     }
