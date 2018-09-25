@@ -7,7 +7,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-  @import '~/assets/sass/core/variables.scss';
+  @import '~assets/sass/core/variables.scss';
 
   .copyright {
     p, a {

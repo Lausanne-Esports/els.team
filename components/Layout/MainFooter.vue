@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-md-flex justify-content-between">
         <div class="infos">
-          <img src="~/assets/images/logo_footer.png" class="mb-3">
+          <img src="~assets/images/logo_footer.png" class="mb-3">
           <p class="els">Lausanne-Sport<br>
             eSports</p>
           <p>Frédéric Boy<br>

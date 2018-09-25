@@ -18,7 +18,7 @@
       </div>
     </div>
     <a href="/" class="logo mx-auto">
-      <img src="~/assets/images/logo.png">
+      <img src="~assets/images/logo.png">
     </a>
   </header>
 </template>
@@ -40,10 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '~/assets/sass/core/variables.scss';
+  @import '~assets/sass/core/variables.scss';
 
   .main {
-    background: url('~/assets/images/header_bg.jpg') top center;
+    background: url('~assets/images/header_bg.jpg') top center;
     background-size: cover;
     height: 800px;
 
