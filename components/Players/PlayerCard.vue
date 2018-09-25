@@ -1,7 +1,7 @@
 <template>
   <div class="player-card">
     <div class="picture">
-      <img :src="picture" />
+      <img :src="picture" :alt="fullname" />
     </div>
     <div class="body">
       <label>Nom / Pseudo</label>
