@@ -3,7 +3,7 @@
     <nuxt-link :to="url" class="article featured">
       <div
         class="thumbnail"
-        :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
+        v-lazy:background-image="thumbnail"
       />
       <section class="body">
         <div class="title">

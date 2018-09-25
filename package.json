@@ -20,6 +20,7 @@
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
     "sweetalert": "^2.1.0",
+    "vue-lazyload": "^1.2.6",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

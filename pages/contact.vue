@@ -1,7 +1,10 @@
 <template>
   <section class="page">
     <header class="d-flex align-items-end">
-      <div class="image-head" :style="{ backgroundImage: 'url(~assets/images/header_lu.jpg)' }" />
+      <div
+        class="image-head"
+        v-lazy:background-image="'/images/header_lu.jpg'"
+      />
       <div class="container">
         <h1>Contact</h1>
         <p class="sub-title">Envie de nous dire quelque chose ?</p>

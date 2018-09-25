@@ -1,7 +1,10 @@
 <template>
   <article class="single">
     <header class="d-flex align-items-end">
-      <div class="image-head" :style="{ backgroundImage: 'url(' + thumbnail + ')' }" />
+      <div
+        class="image-head"
+        v-lazy:background-image="thumbnail"
+      />
       <div class="container">
         <p class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</p>
         <h1>{{ article.headline }}</h1>

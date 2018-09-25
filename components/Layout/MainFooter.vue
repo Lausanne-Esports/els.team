@@ -3,7 +3,7 @@
     <div class="container">
       <div class="d-md-flex justify-content-between">
         <div class="infos">
-          <img src="~assets/images/logo_footer.png" class="mb-3" alt="">
+          <img v-lazy="'/images/logo_footer.png'" class="mb-3" alt="">
           <p class="els">Lausanne-Sport<br>
             eSports</p>
           <p>Frédéric Boy<br>
@@ -27,7 +27,7 @@
           <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank"><i class="icon-steam" /> Steam</a>
         </div>
         <div class="sesf align-md-self-end">
-          <img src="~assets/images/sesf.png" alt="Swiss Esports Federation Logo">
+          <img v-lazy="'/images/sesf.png'" alt="Swiss Esports Federation Logo">
         </div>
       </div>
     </div>

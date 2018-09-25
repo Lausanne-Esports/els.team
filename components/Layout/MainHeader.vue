@@ -1,5 +1,9 @@
 <template>
-  <header class="main" :class="{ compact: compact }">
+  <header
+    class="main"
+    :class="{ compact: compact }"
+    v-lazy:background-image="'/images/header_bg.jpg'"
+  >
     <div class="nav-bar">
       <div class="container d-flex justify-content-between">
         <div class="hamburger" @click="toggleMenu">
@@ -18,7 +22,7 @@
       </div>
     </div>
     <a href="/" class="logo mx-auto">
-      <img src="~assets/images/logo.png" alt="Lausanne eSports Logo">
+      <img src="/images/logo.png" alt="Lausanne eSports Logo">
     </a>
   </header>
 </template>
@@ -43,7 +47,7 @@ export default {
   @import '~assets/sass/core/variables.scss';
 
   .main {
-    background: url('~assets/images/header_bg.jpg') top center;
+    background-position: top center;
     background-size: cover;
     height: 800px;
 

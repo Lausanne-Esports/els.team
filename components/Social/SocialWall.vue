@@ -12,22 +12,16 @@
         <span><i class="icon-facebook" /></span>
       </a>
       <a class="post dark-blue" href="https://www.instagram.com/p/BjSIbA1ADsE/" target="blank">
-        <span
-          style="background-image: url(/images/ig/2.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/2.jpg'" />
       </a>
       <a class="post twitter" href="https://twitter.com/lausanneesports" target="blank">
         <span><i class="icon-twitter" /></span>
       </a>
       <a class="post w-double dark-blue" href="https://www.instagram.com/p/BjbsTp9gxTk/" target="blank">
-        <span
-          style="background-image: url(/images/ig/1.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/1.jpg'" />
       </a>
       <a class="post w-double dark-blue" href="https://www.instagram.com/p/BjN2D0vgBYE/" target="blank">
-        <span
-          style="background-image: url(/images/ig/3.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/3.jpg'" />
       </a>
       <a class="post youtube" href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank">
         <span><i class="icon-youtube" /></span>
@@ -36,22 +30,16 @@
         <span><i class="icon-twitch" /></span>
       </a>
       <a class="post dark-blue" href="https://www.instagram.com/p/BkXQj31gXUF/" target="blank">
-        <span
-          style="background-image: url(/images/ig/4.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/4.jpg'" />
       </a>
       <a class="post dark-blue" href="https://www.instagram.com/p/Bi6ddSWg7HX/" target="blank">
-        <span
-          style="background-image: url(/images/ig/5.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/5.jpg'" />
       </a>
       <a class="post discord" href="https://discord.gg/RZPDWSe" target="blank">
         <span><i class="icon-discord" /></span>
       </a>
       <a class="post w-double dark-blue" href="https://www.instagram.com/p/BhleP40AWvM/" target="blank">
-        <span
-          style="background-image: url(/images/ig/6.jpg);"
-        />
+        <span v-lazy:background-image="'/images/ig/6.jpg'" />
       </a>
       <a class="post steam" href="https://steamcommunity.com/groups/lausanne_esports" target="blank">
         <span><i class="icon-steam" /></span>

@@ -1,5 +1,9 @@
 <template>
-  <div v-if="!processingRequest" class="featured-article col-md-12" :style="`background-image: url(${thumbnail});`">
+  <div
+    v-if="!processingRequest"
+    class="featured-article col-md-12"
+    v-lazy:background-image="thumbnail"
+  >
     <nuxt-link :to="url">
       <div class="infos">
         <p class="category mb-0"><i :class="`icon-${article.category.code}`" /> {{ article.category.name }}</p>

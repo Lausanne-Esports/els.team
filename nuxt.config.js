@@ -35,6 +35,13 @@ export default {
     ['@nuxtjs/google-analytics', { id: 'UA-96607341-1' }],
   ],
 
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    { src: '~/plugins/lazyload.js', ssr: false },
+  ],
+
   axios: {
     credentials: true,
     proxyHeaders: false,

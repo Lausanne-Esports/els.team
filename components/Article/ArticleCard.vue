@@ -4,7 +4,7 @@
       <div class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</div>
       <div
         class="thumbnail"
-        :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
+        v-lazy:background-image="thumbnail"
       />
       <section class="body">
         <div class="title">

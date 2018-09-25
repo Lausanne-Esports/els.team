@@ -1,7 +1,10 @@
 <template>
   <section class="page">
     <header class="d-flex align-items-end">
-      <div class="image-head" :style="{ backgroundImage: 'url(/images/header_lu.jpg)' }" />
+      <div
+        class="image-head"
+        v-lazy:background-image="'/images/header_lu.jpg'"
+      />
       <div class="container">
         <h1>{{ team.category.name }}</h1>
         <p class="sub-title">{{ team.name }}</p>
