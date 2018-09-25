@@ -26,6 +26,11 @@ export default {
   // Customize the progress bar color
   loading: { color: '#384168' },
 
+  manifest: {
+    name: 'Lausanne Sport eSports',
+    short_name: 'eLS Website',
+  },
+
   /*
   ** Nuxt.js modules
   */
