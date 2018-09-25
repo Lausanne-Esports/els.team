@@ -12,7 +12,7 @@
   .copyright {
     p, a {
       font-size: 12px;
-      color: $dark-purple-blue;
+      color: #74617c;
       margin-bottom: 0px;
     }
 
