@@ -27,7 +27,7 @@
           <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank"><i class="icon-steam" /> Steam</a>
         </div>
         <div class="sesf align-md-self-end">
-          <img src="~/assets/images/sesf.png">
+          <img src="~assets/images/sesf.png">
         </div>
       </div>
     </div>

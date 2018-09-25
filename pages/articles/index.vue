@@ -1,7 +1,7 @@
 <template>
   <section class="page">
     <header class="d-flex align-items-end">
-      <div class="image-head" :style="{ backgroundImage: 'url(~/assets/images/header_lu.jpg)' }" />
+      <div class="image-head" :style="{ backgroundImage: 'url(~assets/images/header_lu.jpg)' }" />
       <div class="container">
         <h1>Toutes les news</h1>
       </div>
