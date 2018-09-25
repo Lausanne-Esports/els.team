@@ -18,7 +18,7 @@
       </div>
     </div>
     <a href="/" class="logo mx-auto">
-      <img src="~assets/images/logo.png">
+      <img src="~assets/images/logo.png" alt="Lausanne eSports Logo">
     </a>
   </header>
 </template>
