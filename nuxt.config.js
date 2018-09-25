@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-module.exports = {
+export default {
   // Headers of the page
   head: {
     title: 'Lausanne eSports',
@@ -17,6 +17,10 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '16x16', href: '/favicon-16x16.png' },
       { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'mask-icon', color: '#384168', href: '/safari-pinned-tab.svg' },
+      { rel: 'preconnect', href: 'https://api.els.team' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'dns-prefetch', href: 'https://api.els.team' },
+      { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
     ],
   },
   // Customize the progress bar color

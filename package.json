@@ -18,7 +18,7 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "@slynova/slug": "^1.1.2",
     "cross-env": "^5.2.0",
-    "nuxt-edge": "^2.0.0-25621471.65432e6",
+    "nuxt": "^2.0.0",
     "sweetalert": "^2.1.0",
     "vuex": "^3.0.1"
   },
