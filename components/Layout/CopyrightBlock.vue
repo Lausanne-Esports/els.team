@@ -12,7 +12,7 @@
   .copyright {
     p, a {
       font-size: 12px;
-      color: #74617c;
+      color: #a5a5a5;
       margin-bottom: 0px;
     }
 
