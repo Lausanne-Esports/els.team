@@ -30,6 +30,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     ['@nuxtjs/google-analytics', { id: 'UA-96607341-1' }],
