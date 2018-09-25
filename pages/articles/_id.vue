@@ -49,6 +49,12 @@ export default {
     return {
       title: `${this.article.headline} | Lausanne eSports`,
       meta: [
+        { hid: 'og:title', property: 'og:title', content: `${this.article.headline} | Lausanne eSports` },
+        { hid: 'og:name', property: 'og:name', content: `${this.article.headline} | Lausanne eSports` },
+        { hid: 'og:description', property: 'og:description', content: this.article.description },
+        { hid: 'og:image', property: 'og:image', content: this.article.thumbnail },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:url', property: 'og:url', content: this.$route.path },
         { hid: 'description', name: 'description', content: this.article.description },
       ],
     }
@@ -87,6 +93,7 @@ export default {
     enUrl () {
       return `${this.$route.path}?lang=en`
     },
+
     published_at() {
       return this.article.published_at.split(' ')[0];
     }

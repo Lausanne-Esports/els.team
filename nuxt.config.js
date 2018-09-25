@@ -26,6 +26,12 @@ export default {
   // Customize the progress bar color
   loading: { color: '#384168' },
 
+  meta: {
+    name: 'Lausanne eSports',
+    description: 'Site Internet du club Lausanne Sport eSports',
+    theme_color: '#384168',
+  },
+
   manifest: {
     name: 'Lausanne Sport eSports',
     short_name: 'eLS Website',
