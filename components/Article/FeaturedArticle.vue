@@ -40,7 +40,7 @@ export default {
     },
 
     thumbnail() {
-      return this.article.featured_thumbnail || '~assets/images/header_bg.jpg';
+      return this.article.featured_thumbnail || '/images/header_bg.jpg';
     }
   }
 }

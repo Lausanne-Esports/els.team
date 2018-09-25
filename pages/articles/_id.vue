@@ -69,7 +69,7 @@ export default {
 
   computed: {
     thumbnail () {
-      return this.article.thumbnail || '~assets/images/header_bg.jpg';
+      return this.article.thumbnail || '/images/header_bg.jpg';
     },
 
     twitterShareUrl () {

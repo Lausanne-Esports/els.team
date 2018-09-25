@@ -21,7 +21,7 @@
 
     &.#{$game} {
       .bg-image {
-        background-image: url('~assets/images/games/#{$game}.png');
+        background-image: url('/images/games/#{$game}.png');
       }
     }
 
