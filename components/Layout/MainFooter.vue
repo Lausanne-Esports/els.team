@@ -7,8 +7,8 @@
           <p class="els">Lausanne-Sport<br>
             eSports</p>
           <p>Frédéric Boy<br>
-            Route de Bellevue 8<br>
-            1803 Chardonne Suisse / Vaud</p>
+            Stade de la Tuilière<br>
+            1018 Lausanne - Suisse / Vaud</p>
         </div>
         <nav class="footer-nav">
           <nuxt-link to="/">Accueil</nuxt-link>
