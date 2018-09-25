@@ -4,7 +4,7 @@
       class="picture"
       v-lazy:background-image="'/images/players/background_player.jpg'"
     >
-      <img :v-lazy="picture" :alt="fullname" />
+      <img v-lazy="picture" :alt="fullname" />
     </div>
     <div class="body">
       <label>Nom / Pseudo</label>
