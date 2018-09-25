@@ -105,5 +105,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '~/assets/sass/pages/article.scss';
+  @import '~assets/sass/pages/article.scss';
 </style>

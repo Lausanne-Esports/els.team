@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '~/assets/sass/core/variables.scss';
+  @import '~assets/sass/core/variables.scss';
 
   .featured-article {
     background-color: $white;

@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '~/assets/sass/core/variables.scss';
+  @import '~assets/sass/core/variables.scss';
 
   .mobile-menu {
     position: fixed;
