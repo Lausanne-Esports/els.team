@@ -19,6 +19,7 @@
           :href="social.url"
           target="_blank"
           rel="nofollow"
+          :aria-label="`${social.type} pour ${fullname}`"
         ><i :class="'icon-' + social.type"></i></a>
       </div>
     </div>
