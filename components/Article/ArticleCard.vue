@@ -33,7 +33,7 @@ export default {
     },
 
     thumbnail() {
-      return this.article.thumbnail || '~/assets/images/header_bg.jpg';
+      return this.article.thumbnail || '~assets/images/header_bg.jpg';
     },
     published_at() {
       return this.article.published_at.split(' ')[0];

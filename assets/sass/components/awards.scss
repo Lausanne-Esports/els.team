@@ -38,7 +38,7 @@
       opacity: 0.3;
       @each $game in $games {
         &.#{$game} {
-          background-image: url('~/assets/images/games/#{$game}.png');
+          background-image: url('~assets/images/games/#{$game}.png');
         }
       }
     }
