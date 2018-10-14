@@ -61,6 +61,21 @@ export default {
 
   // Build configuration
   build: {
+    extractCSS: true,
+
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          },
+        },
+      },
+    },
+
     // Run ESLint on save
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
