@@ -39,19 +39,37 @@ export default {
       awards: [
         {
           result: 1,
+          name: 'SESL Fall Season',
+          lineup: 'Bozo',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'SESL Fall Season',
+          lineup: 'younTheory',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'SwitzerLAN',
+          lineup: 'KarpetMan',
+          year: '2018'
+        },
+        {
+          result: 1,
           name: 'QwertzStone Édition Noël',
           lineup: 'Bozo',
           year: '2018'
         },
         {
           result: 1,
-          name: 'Spring 2018',
+          name: 'SESL Spring Season',
           lineup: 'Bozo',
           year: '2018'
         },
         {
           result: 3,
-          name: 'Spring 2018',
+          name: 'SESL Spring Season',
           lineup: 'Hypno',
           year: '2018'
         },
@@ -171,6 +189,18 @@ export default {
       awards: [
         {
           result: 3,
+          name: 'SESL Fall Season',
+          lineup: 'eLS.Indigo',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Indigo',
+          year: '2018'
+        },
+        {
+          result: 3,
           name: 'PolyLAN #31',
           lineup: 'eLS.Indigo',
           year: '2018'
@@ -267,6 +297,18 @@ export default {
       awards: [
         {
           result: 3,
+          name: 'SESL Fall Season',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 2,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Pachimari',
+          year: '2018'
+        },
+        {
+          result: 3,
           name: 'SESL Winter Season',
           lineup: 'eLS.Pachimari',
           year: '2018'
@@ -303,7 +345,7 @@ export default {
         },
         {
           result: 4,
-          name: 'Bâloise International Gaming Show',
+          name: 'Bâloise International Gaming Show #1',
           lineup: 'eLS.Pachimari',
           year: '2017'
         },
@@ -380,6 +422,18 @@ export default {
       code: 'rl',
       awards: [
         {
+          result: 2,
+          name: 'SESL Fall Season',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
+        {
+          result: 1,
+          name: 'SwitzerLAN',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
+        {
           result: 1,
           name: 'RLRS Qualifier',
           lineup: 'eLS.Aurora',
@@ -428,8 +482,38 @@ export default {
           year: '2017'
         },
       ]
-    }],
-  }),
+    },
+    {
+      name: 'FIFA',
+      code: 'fifa',
+      awards: [
+        {
+          result: 1,
+          name: 'IGS Series #1',
+          lineup: 'AdiSS',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'IGS Series #1',
+          lineup: 'LoNe_LiNe',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'Bâloise International Gaming Show #2',
+          lineup: 'AimNight',
+          year: '2018'
+        },
+        {
+          result: 3,
+          name: 'SFCO #1',
+          lineup: 'AimNight',
+          year: '2018'
+        },
+      ],
+    }
+  ]}),
 
   head: () => ({
     title: 'Palmarès | Lausanne eSports',
