@@ -8,6 +8,7 @@
     height: 80px;
     color: $white;
     background: $dark-blue;
+    cursor: pointer;
 
     h2 {
       position: relative;
@@ -40,6 +41,34 @@
         &.#{$game} {
           background-image: url('/images/games/#{$game}.png');
         }
+      }
+    }
+  }
+
+  .awards {
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    transition: 0.3s max-height;
+
+    .more {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-weight: bold;
+      background: linear-gradient(transparent, $white);
+      transition: 0.3s all;
+      cursor: pointer;
+    }
+
+    &.open {
+      .more {
+        visibility: hidden;
+        opacity: 0;
       }
     }
   }
