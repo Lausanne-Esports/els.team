@@ -38,6 +38,18 @@ export default {
       code: 'hs',
       awards: [
         {
+          result: 3,
+          name: 'HCT Oslo',
+          lineup: 'Hypno',
+          year: 2018
+        },
+        {
+          result: 1,
+          name: 'QwertzStone de Noël',
+          lineup: 'Hypno',
+          year: 2018
+        },
+        {
           result: 1,
           name: 'SESL Fall Season',
           lineup: 'Bozo',
@@ -422,6 +434,12 @@ export default {
       code: 'rl',
       awards: [
         {
+          result: 3,
+          name: 'TCS Esports League',
+          lineup: 'eLS.Aurora',
+          year: '2018'
+        },
+        {
           result: 2,
           name: 'SESL Fall Season',
           lineup: 'eLS.Aurora',
@@ -487,6 +505,12 @@ export default {
       name: 'FIFA',
       code: 'fifa',
       awards: [
+        {
+          result: 2,
+          name: 'SFCO 2vs2 #2',
+          lineup: 'AimNight & Mathieu',
+          year: '2018'
+        },
         {
           result: 1,
           name: 'IGS Series #1',
