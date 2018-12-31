@@ -12,8 +12,6 @@ yarn-error.log
 dist
 
 .env
-package-lock.json
-yarn.lock
 
 # PWA
 sw.*
