@@ -6,7 +6,7 @@
         v-lazy:background-image="thumbnail"
       />
       <div class="container">
-        <p class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</p>
+        <p class="category"><i :class="'icon-' + category.code" /> {{ category.name }}</p>
         <h1>{{ article.headline }}</h1>
         <p class="sub-title" v-if="article.subtitle">{{ article.subtitle }}</p>
         <p class="date">{{ published_at }}</p>
@@ -74,6 +74,10 @@ export default {
   },
 
   computed: {
+    category () {
+      return this.$store.state.articleCategories[this.article.category_id]
+    },
+
     thumbnail () {
       return this.article.thumbnail || '/images/header_bg.jpg';
     },
