@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AwardItem from '@/components/Awards/AwardItem';
+import AwardItem from '@/components/Awards/AwardItem'
 
 export default {
   props: ['game'],
