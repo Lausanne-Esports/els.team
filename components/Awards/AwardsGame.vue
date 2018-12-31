@@ -16,30 +16,33 @@ import AwardItem from '@/components/Awards/AwardItem';
 
 export default {
   props: ['game'],
-  data() {
-    return {
-      open: false,
-      hasMore: true,
-    }
-  },
+
   components: { AwardItem },
-  mounted() {
-    if(this.$refs.list.scrollHeight <= this.$refs.list.clientHeight) {
-      this.open = true;
-      this.hasMore = false;
+
+  data: () => ({
+    open: false,
+    hasMore: true,
+  }),
+
+  mounted () {
+    if (this.$refs.list.scrollHeight <= this.$refs.list.clientHeight) {
+      this.open = true
+      this.hasMore = false
     }
   },
+
   methods: {
-    toggleList() {
-      if(!this.hasMore)
-        return;
+    toggleList () {
+      if (!this.hasMore) {
+        return
+      }
 
       if (this.$refs.list.style.maxHeight){
-        this.$refs.list.style.maxHeight = null;
-        this.open = false;
+        this.$refs.list.style.maxHeight = null
+        this.open = false
       } else {
-        this.$refs.list.style.maxHeight = this.$refs.list.scrollHeight + "px";
-        this.open = true;
+        this.$refs.list.style.maxHeight = this.$refs.list.scrollHeight + "px"
+        this.open = true
       }
     }
   }
