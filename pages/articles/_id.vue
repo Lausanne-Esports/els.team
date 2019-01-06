@@ -21,7 +21,7 @@
           <a href="#" target="_blank"><i class="icon-reddit" /></a>
         </div>
 
-        <div class="lang-menu" v-if="article.translations.length > 0">
+        <div class="lang-menu" v-if="article.translations.length > 1">
           <nuxt-link :to="frUrl" :class="{ current: lang=='fr'}">fr</nuxt-link> / <nuxt-link :to="enUrl" :class="{ current: lang=='en'}">en</nuxt-link>
         </div>
       </div>
