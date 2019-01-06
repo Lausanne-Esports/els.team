@@ -19,8 +19,10 @@ export default {
       { rel: 'mask-icon', color: '#384168', href: '/safari-pinned-tab.svg' },
       { rel: 'preconnect', href: 'https://api.els.team' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://platform.twitter.com' },
       { rel: 'dns-prefetch', href: 'https://api.els.team' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
+      { rel: 'dns-prefetch', href: 'https://platform.twitter.com' },
     ],
   },
   // Customize the progress bar color

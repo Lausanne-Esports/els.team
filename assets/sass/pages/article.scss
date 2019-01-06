@@ -1,6 +1,10 @@
 @import '~assets/sass/core/variables.scss';
 
 article.single {
+  .twitter-tweet {
+    margin-bottom: 40px !important;
+  }
+
   header {
     position: relative;
     height: 430px;
@@ -241,7 +245,6 @@ article.single {
 }
 
 @media screen and (max-width: 768px) {
-
   article.single {
     header {
       h1 {
@@ -274,5 +277,4 @@ article.single {
       }
     }
   }
-
 }

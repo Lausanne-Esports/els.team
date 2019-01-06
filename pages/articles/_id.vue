@@ -60,6 +60,18 @@ export default {
     }
   },
 
+  mounted () {
+    const script = document.createElement('script')
+    script.setAttribute('src', 'https://platform.twitter.com/widgets.js')
+    script.setAttribute('id', 'twitter-script')
+
+    document.body.appendChild(script)
+  },
+
+  destroyed () {
+    document.querySelector('#twitter-script').remove()
+  },
+
   async asyncData ({ params, query, error, $axios }) {
     try {
       const [id] = params.id.split('-')
