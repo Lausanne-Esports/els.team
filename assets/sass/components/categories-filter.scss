@@ -1,19 +1,30 @@
 @import '~assets/sass/core/variables.scss';
 
 .categories-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 30px;
   background: $white;
 
   a {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
     margin: 0 20px;
-    height: 80px;
+    min-width: 40px;
     line-height: 80px;
     color: #6e7785;
     font-size: 12px;
     text-transform: uppercase;
     transition: all .3s;
+
+    i {
+      font-size: 24px;
+      line-height: 80px;
+    }
 
     &::before {
       content: "";

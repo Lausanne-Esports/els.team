@@ -5,7 +5,9 @@
       v-for="category in categories"
       :key="category.id"
       @click="$emit('categoryChanged', category)"
-    >{{ category.name }}</a>
+    >
+      <i :class="'icon-' + category.code" />
+    </a>
   </div>
 </template>
 
