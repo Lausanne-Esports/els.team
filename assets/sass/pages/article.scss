@@ -5,6 +5,10 @@ article.single {
     margin-bottom: 40px !important;
   }
 
+  .icon-link {
+    display: none;
+  }
+
   header {
     position: relative;
     height: 430px;
@@ -106,6 +110,7 @@ article.single {
   .body {
     padding-top: ($paragraph-space * 2);
     font-size: $paragraph-size;
+    text-align: justify;
 
     h2, h3, p {
       margin-bottom: $paragraph-space;
