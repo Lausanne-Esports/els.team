@@ -2,11 +2,10 @@
 
 @font-face {
     font-family: 'lausanne-esports';
-    src:  url('~assets/fonts/lausanne-esports.eot?1r487h');
-    src:  url('~assets/fonts/lausanne-esports.eot?1r487h#iefix') format('embedded-opentype'),
-        url('~assets/fonts/lausanne-esports.ttf?1r487h') format('truetype'),
-        url('~assets/fonts/lausanne-esports.woff?1r487h') format('woff'),
-        url('~assets/fonts/lausanne-esports.svg?1r487h#lausanne-esports') format('svg');
+    src:
+      url('~assets/fonts/lausanne-esports.ttf?qkpqaz') format('truetype'),
+      url('~assets/fonts/lausanne-esports.woff?qkpqaz') format('woff'),
+      url('~assets/fonts/lausanne-esports.svg?qkpqaz#lausanne-esports') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -169,4 +168,13 @@
 }
 .icon-youtube:before {
   content: "\e92f";
+}
+.icon-fortnite:before {
+  content: "\e930";
+}
+.icon-news:before {
+  content: "\e931";
+}
+.icon-roe:before {
+  content: "\e932";
 }
