@@ -1,12 +1,12 @@
 <template>
   <div class="col-md-4">
-    <nuxt-link :to="`/structure/${team.id}-${team.category.code}-${sluggifiedName}`">
-      <div :class="`lineup-card ${team.category.code}`">
+    <nuxt-link :to="`/structure/${team.id}-${category.code}-${sluggifiedName}`">
+      <div :class="`lineup-card ${category.code}`">
         <div class="bg-image"></div>
         <div v-if="team.academy" class="academy">Académie</div>
         <div class="body">
           <div class="players">{{ team.numberOfPlayers }} joueurs</div>
-          <h2>{{ team.category.name }}
+          <h2>{{ category.name }}
           <span v-if="team.name" class="name"><br />{{ team.name }}</span></h2>
           <p class="read-more">En savoir plus <i class="icon-arrow-right" /></p>
         </div>
@@ -24,6 +24,10 @@ export default {
   computed: {
     sluggifiedName () {
       return slug(this.team.name)
+    },
+
+    category () {
+      return this.$store.state.teamCategories[this.team.category_id]
     },
   },
 }

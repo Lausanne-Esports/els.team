@@ -6,7 +6,7 @@
         v-lazy:background-image="'/images/header_lu.jpg'"
       />
       <div class="container">
-        <h1>{{ team.category.name }}</h1>
+        <h1>{{ category.name }}</h1>
         <p class="sub-title">{{ team.name }}</p>
       </div>
     </header>
@@ -49,6 +49,12 @@ export default {
         { hid: 'description', name: 'description', content: `Page de l'équipe ${this.team.name}` },
       ],
     }
+  },
+
+  computed: {
+    category () {
+      return this.$store.state.teamCategories[this.team.category_id]
+    },
   },
 }
 </script>
