@@ -28,6 +28,9 @@
       font-style: italic;
       letter-spacing: 2px;
       text-transform: uppercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     .image-head {

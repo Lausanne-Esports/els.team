@@ -28,7 +28,24 @@
     </section>
 
     <!-- Advertisements -->
-    <advertisement-block></advertisement-block>
+    <!--<advertisement-block></advertisement-block>-->
+
+    <section class="wrapper dark-blue pt-5 pb-5">
+      <div class="container">
+        <div class="head d-flex justify-content-between">
+          <h2>Lives</h2>
+          <nuxt-link to="/streams" class="read-more">Tous les lives <i class="icon-arrow-right" /></nuxt-link>
+        </div>
+        <div class="row mt-3">
+          <stream-card
+            class="col-md-4"
+            :key="stream.id"
+            :stream="stream"
+            v-for="stream in onlineStreams"
+          ></stream-card>
+        </div>
+      </div>
+    </section>
 
     <!-- Social Wall -->
     <section class="wrapper light pt-5 pb-5">
@@ -41,11 +58,11 @@
 
 <script>
 import SocialWall from '@/components/Social/SocialWall'
+import StreamCard from '@/components/Streams/StreamCard'
 import ArticleCard from '@/components/Article/ArticleCard'
 import FeaturedArticle from '@/components/Article/FeaturedArticle'
 import FeaturedArticleCard from '@/components/Article/FeaturedArticleCard'
 import AdvertisementBlock from '@/components/Advertisement/AdvertisementBlock'
-
 
 export default {
   layout: 'home',
@@ -53,23 +70,36 @@ export default {
   scrollToTop: true,
 
   components: {
-    AdvertisementBlock,
     ArticleCard,
     FeaturedArticle,
     FeaturedArticleCard,
     SocialWall,
+    StreamCard,
   },
 
   data: () => ({
     lastArticle: {},
     articles: [],
+    streams: [],
   }),
 
   async asyncData ({ $axios }) {
-    const [lastArticle, ...articles] = await $axios.$get('/articles?limit=5')
+    const [[lastArticle, ...articles], streams] = await Promise.all([
+      $axios.$get('/articles?limit=5'),
+      $axios.$get('/streams'),
+    ])
 
-    return { articles, lastArticle }
+    return { articles, lastArticle, streams }
   },
+
+  computed: {
+    onlineStreams () {
+      return this.streams
+        .filter(x => x.is_live === true)
+        .sort((a, b) => b.viewers - a.viewers)
+        .slice(0, 3)
+    },
+  }
 }
 </script>
 

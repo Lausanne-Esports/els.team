@@ -15,6 +15,7 @@
           <nuxt-link to="/articles">News</nuxt-link>
           <nuxt-link to="/structure">Structure</nuxt-link>
           <nuxt-link to="/awards">Palmarès</nuxt-link>
+          <nuxt-link to="/streams">Lives</nuxt-link>
           <nuxt-link to="/contact">Contact</nuxt-link>
         </nav>
         <div class="socials">

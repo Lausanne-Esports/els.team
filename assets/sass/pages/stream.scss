@@ -1,0 +1,86 @@
+@import '~assets/sass/core/variables.scss';
+
+.stream {
+  iframe {
+    border: none;
+  }
+
+  .btn-sub, .btn-fullscreen {
+    display: inline-block;
+    padding: 0px 10px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0.8em;
+    text-transform: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-sub {
+    color: $white;
+    background: #68329a;
+  }
+
+  .btn-fullscreen {
+    font-size: 0.9em;
+    color: $white;
+    background: $darker-gray;
+  }
+
+  .player {
+    position: relative;
+    padding-top: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .chat {
+    iframe {
+      width: 100%;
+      height: calc(100% - 35px);
+    }
+  }
+
+  &.fullscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 30px;
+    background: $dark-gray;
+    z-index: 9999;
+
+    h2 {
+      color: $white !important;
+    }
+
+    .player {
+      height: calc(100vh - 90px);
+    }
+
+    .chat {
+      iframe {
+        height: calc(100vh - 90px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .stream {
+    .chat {
+      display: none;
+    }
+  }
+
+}
