@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import StreamCard from '@/components/Streams/StreamCard';
+import StreamCard from '@/components/Streams/StreamCard'
 
 export default {
   layout: 'page',
@@ -66,53 +66,58 @@ export default {
   data: () => ({
     stream: {},
     streams: [],
-    fullscreen: false
+    fullscreen: false,
   }),
 
-  head: () => ({
-    title: 'Live | Lausanne eSports',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Liste des lives' },
-    ],
-  }),
-
-  async asyncData ({ params, query, error, $axios }) {
-    try {
-      const stream = await $axios.$get(`/streams/${params.id.split('-')[0]}`);
-      const streams = await $axios.$get('/streams');
-
-      return { stream, streams }
-    } catch(e) {
+  head () {
+    return {
+      title: `Live ${this.stream.display_name} | Lausanne eSports`,
+      meta: [
+        { hid: 'description', name: 'description', content: `${this.stream.display_name} live stream` },
+      ],
     }
+  },
+
+  async asyncData ({ params, $axios }) {
+    const [stream, streams] = await Promise.all([
+      $axios.$get(`/streams/${params.id.split('-')[0]}`),
+      $axios.$get('/streams'),
+    ])
+
+    return { stream, streams }
   },
 
   computed: {
-    playerUrl() {
-      return `https://player.twitch.tv/?channel=${this.stream.username}&muted=false`;
+    playerUrl () {
+      return `https://player.twitch.tv/?channel=${this.stream.username}&muted=false`
     },
-    chatUrl() {
-      return `https://www.twitch.tv/embed/${this.stream.username}/chat?darkpopout`;
+
+    chatUrl () {
+      return `https://www.twitch.tv/embed/${this.stream.username}/chat?darkpopout`
     },
-    subUrl() {
-      return `https://www.twitch.tv/subs/${this.stream.username}`;
+
+    subUrl () {
+      return `https://www.twitch.tv/subs/${this.stream.username}`
     },
-    onlineStreams() {
-      return this.streams.filter(x => x.is_live == true);
+
+    onlineStreams () {
+      return this.streams.filter(x => x.is_live === true)
     },
-    offlineStreams() {
-      return this.streams.filter(x => x.is_live == false);
-    }
+
+    offlineStreams () {
+      return this.streams.filter(x => x.is_live === false)
+    },
   },
 
   methods: {
-    toggleFullscreen() {
-      this.fullscreen = !this.fullscreen;
-    }
+    toggleFullscreen () {
+      this.fullscreen = !this.fullscreen
+    },
   },
 }
 </script>
 
 <style lang="scss">
-  @import '~assets/sass/pages/page.scss';
-  @import '~assets/sass/pages/stream.scss';
+@import '~assets/sass/pages/page.scss';
+@import '~assets/sass/pages/stream.scss';
 </style>

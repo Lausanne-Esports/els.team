@@ -58,12 +58,11 @@
 
 <script>
 import SocialWall from '@/components/Social/SocialWall'
+import StreamCard from '@/components/Streams/StreamCard'
 import ArticleCard from '@/components/Article/ArticleCard'
 import FeaturedArticle from '@/components/Article/FeaturedArticle'
 import FeaturedArticleCard from '@/components/Article/FeaturedArticleCard'
 import AdvertisementBlock from '@/components/Advertisement/AdvertisementBlock'
-import StreamCard from '@/components/Streams/StreamCard'
-
 
 export default {
   layout: 'home',
@@ -75,7 +74,7 @@ export default {
     FeaturedArticle,
     FeaturedArticleCard,
     SocialWall,
-    StreamCard
+    StreamCard,
   },
 
   data: () => ({
@@ -85,15 +84,20 @@ export default {
   }),
 
   async asyncData ({ $axios }) {
-    const [lastArticle, ...articles] = await $axios.$get('/articles?limit=5')
-    const streams = await $axios.$get('/streams');
+    const [[lastArticle, ...articles], streams] = await Promise.all([
+      $axios.$get('/articles?limit=5'),
+      $axios.$get('/streams'),
+    ])
 
     return { articles, lastArticle, streams }
   },
 
   computed: {
-    onlineStreams() {
-      return this.streams.filter(x => x.is_live == true).sort((a, b) => b.viewers - a.viewers).slice(0,3);
+    onlineStreams () {
+      return this.streams
+        .filter(x => x.is_live === true)
+        .sort((a, b) => b.viewers - a.viewers)
+        .slice(0, 3)
     },
   }
 }

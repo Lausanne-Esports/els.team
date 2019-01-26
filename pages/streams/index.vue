@@ -61,29 +61,26 @@ export default {
     ],
   }),
 
-  async asyncData ({ query, error, $axios }) {
+  async asyncData ({ $axios }) {
     try {
-      const streams = await $axios.$get('/streams');
+      const streams = await $axios.$get('/streams')
 
       return { streams }
-    } catch(e) {
-    }
+    } catch(e) {}
   },
 
   computed: {
-    onlineStreams() {
-      return this.streams.filter(x => x.is_live == true);
+    onlineStreams () {
+      return this.streams.filter(x => x.is_live === true)
     },
-    offlineStreams() {
-      return this.streams.filter(x => x.is_live == false);
-    }
-  },
 
-  methods: {
+    offlineStreams () {
+      return this.streams.filter(x => x.is_live === false)
+    },
   },
 }
 </script>
 
 <style lang="scss">
-  @import '~assets/sass/pages/page.scss';
+@import '~assets/sass/pages/page.scss';
 </style>
