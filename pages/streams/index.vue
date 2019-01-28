@@ -14,14 +14,7 @@
         <div class="head d-flex">
           <h2>En ligne</h2>
         </div>
-        <div class="row mt-3">
-          <stream-card
-            class="col-md-4"
-            :key="stream.id"
-            :stream="stream"
-            v-for="stream in onlineStreams"
-          ></stream-card>
-        </div>
+        <stream-list :streams="streams" :online="true" class="mt-3"></stream-list>
       </div>
     </section>
     <section class="wrapper darker-blue pt-5 pb-5">
@@ -29,26 +22,19 @@
         <div class="head d-flex">
           <h2>Hors ligne</h2>
         </div>
-        <div class="row mt-3">
-          <stream-card
-            class="col-md-4"
-            :key="stream.id"
-            :stream="stream"
-            v-for="stream in offlineStreams"
-          ></stream-card>
-        </div>
+        <stream-list :streams="streams" :online="false" class="mt-3"></stream-list>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import StreamCard from '@/components/Streams/StreamCard'
+import StreamList from '@/components/Streams/StreamList'
 
 export default {
   layout: 'page',
 
-  components: { StreamCard },
+  components: { StreamList },
 
   data: () => ({
     streams: [],
@@ -68,19 +54,9 @@ export default {
       return { streams }
     } catch(e) {}
   },
-
-  computed: {
-    onlineStreams () {
-      return this.streams.filter(x => x.is_live === true)
-    },
-
-    offlineStreams () {
-      return this.streams.filter(x => x.is_live === false)
-    },
-  },
 }
 </script>
 
 <style lang="scss">
-@import '~assets/sass/pages/page.scss';
+  @import '~assets/sass/pages/page.scss';
 </style>

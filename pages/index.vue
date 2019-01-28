@@ -36,14 +36,7 @@
           <h2>Lives</h2>
           <nuxt-link to="/streams" class="read-more">Tous les lives <i class="icon-arrow-right" /></nuxt-link>
         </div>
-        <div class="row mt-3">
-          <stream-card
-            class="col-md-4"
-            :key="stream.id"
-            :stream="stream"
-            v-for="stream in onlineStreams"
-          ></stream-card>
-        </div>
+        <stream-list :streams="streams" :online="true" :limit="3" class="mt-3"></stream-list>
       </div>
     </section>
 
@@ -58,7 +51,7 @@
 
 <script>
 import SocialWall from '@/components/Social/SocialWall'
-import StreamCard from '@/components/Streams/StreamCard'
+import StreamList from '@/components/Streams/StreamList'
 import ArticleCard from '@/components/Article/ArticleCard'
 import FeaturedArticle from '@/components/Article/FeaturedArticle'
 import FeaturedArticleCard from '@/components/Article/FeaturedArticleCard'
@@ -74,31 +67,22 @@ export default {
     FeaturedArticle,
     FeaturedArticleCard,
     SocialWall,
-    StreamCard,
+    StreamList,
   },
 
   data: () => ({
     lastArticle: {},
     articles: [],
-    streams: [],
+    streams:[],
   }),
 
   async asyncData ({ $axios }) {
     const [[lastArticle, ...articles], streams] = await Promise.all([
       $axios.$get('/articles?limit=5'),
-      $axios.$get('/streams'),
+      $axios.$get('/streams')
     ])
 
     return { articles, lastArticle, streams }
-  },
-
-  computed: {
-    onlineStreams () {
-      return this.streams
-        .filter(x => x.is_live === true)
-        .sort((a, b) => b.viewers - a.viewers)
-        .slice(0, 3)
-    },
   }
 }
 </script>
