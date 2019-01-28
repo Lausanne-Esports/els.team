@@ -29,6 +29,8 @@ export default {
     ],
   },
 
+  modern: true,
+
   // Customize the progress bar color
   loading: { color: '#384168' },
 
