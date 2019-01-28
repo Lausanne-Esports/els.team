@@ -6,9 +6,7 @@
         <a href="https://www.casinosbarriere.com/fr/montreux.html" target="blank" class="main"><img v-lazy="'/images/sponsors/barriere.svg'" alt="Casino Barrière"></a><br />
       </div>
       <div>
-        <a href="http://gaming.eizo.com/" target="blank"><img v-lazy="'/images/sponsors/eizo.svg'" alt="EIZO Gaming"></a>
         <a href="http://tech-center.ch/" target="blank"><img v-lazy="'/images/sponsors/tcm.svg'" alt="Tech-Center"></a>
-        <a href="https://slynova.ch/" target="blank"><img v-lazy="'/images/sponsors/slynova.svg'" alt="Slynova"></a>
       </div>
     </div>
   </section>
