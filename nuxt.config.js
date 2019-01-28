@@ -24,7 +24,11 @@ export default {
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       { rel: 'dns-prefetch', href: 'https://platform.twitter.com' },
     ],
+    script: [
+      { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver' },
+    ],
   },
+
   // Customize the progress bar color
   loading: { color: '#384168' },
 
