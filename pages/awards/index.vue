@@ -536,6 +536,42 @@ export default {
           year: '2018'
         },
       ],
+    },
+    {
+      name: 'Ring of Elysium',
+      code: 'roe',
+      awards: [
+        {
+          result: 2,
+          name: 'Coupe de France #1',
+          lineup: 'Ring of Elysium',
+          year: 2019,
+        },
+      ],
+    },
+    {
+      name: 'Super Smash Bros',
+      code: 'smash',
+      awards: [
+        {
+          result: 2,
+          name: 'Japan Impact Sunday\'s Tournament',
+          lineup: 'MonkeySike',
+          year: 2019
+        },
+        {
+          result: 3,
+          name: 'Japan Impact Sunday\'s Tournament',
+          lineup: 'Fabien',
+          year: 2019
+        },
+        {
+          result: 2,
+          name: 'UltiMelt #8',
+          lineup: 'Fabien',
+          year: 2019,
+        },
+      ],
     }
   ]}),
 
