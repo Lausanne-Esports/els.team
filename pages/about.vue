@@ -42,5 +42,14 @@
 <script>
 export default {
   layout: 'page',
+
+  scrollToTop: true,
+
+  head: () => ({
+    title: 'A Propos | Lausanne eSports',
+    meta: [
+      { hid: 'description', name: 'description', content: `Qu'est-ce que le Lausanne-Sport eSports ?` }
+    ],
+  }),
 }
 </script>
