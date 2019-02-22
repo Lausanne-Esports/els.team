@@ -16,6 +16,7 @@
           <nuxt-link to="/awards">Palmarès</nuxt-link>
           <nuxt-link to="/streams">Lives</nuxt-link>
           <nuxt-link to="/contact">Contact</nuxt-link>
+          <nuxt-link to="/about">A Propos</nuxt-link>
         </nav>
         <nav class="lang-nav">
           <a href="#">FR</a> / <a href="#">EN</a>
