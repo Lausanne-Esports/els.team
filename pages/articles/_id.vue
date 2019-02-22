@@ -56,6 +56,11 @@ export default {
         { hid: 'og:type', property: 'og:type', content: 'article' },
         { hid: 'og:url', property: 'og:url', content: this.$route.path },
         { hid: 'description', name: 'description', content: this.article.description },
+        { hid: 'twitter:title', property: 'twitter:title', content: `${this.article.headline} | Lausanne eSports` },
+        { hid: 'twitter:card', property: 'twitter:card', content: this.article.featured_thumbnail },
+        { hid: 'twitter:site', property: 'twitter:site', content: '@lausanneesports' },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.article.description },
+        { hid: 'twitter:image', property: 'twitter:image', content: this.article.featured_thumbnail },
       ],
     }
   },
