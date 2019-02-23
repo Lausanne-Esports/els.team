@@ -18,6 +18,9 @@
           <nuxt-link to="/contact">Contact</nuxt-link>
           <nuxt-link to="/about">A Propos</nuxt-link>
         </nav>
+        <nav class="top-nav" v-if="currentUser !== null">
+          <a :href="backendUrl">Admin <small>({{ currentUser.username }})</small></a>
+        </nav>
         <nav class="lang-nav">
           <a href="#">FR</a> / <a href="#">EN</a>
         </nav>
@@ -37,11 +40,22 @@ export default {
       default: false,
     },
   },
+
   methods: {
     toggleMenu() {
       this.$emit('toggle-mobile-menu');
-    }
-  }
+    },
+  },
+
+  computed: {
+    currentUser () {
+      return this.$store.state.currentUser
+    },
+
+    backendUrl () {
+      return process.env.BACKEND_URL
+    },
+  },
 }
 </script>
 

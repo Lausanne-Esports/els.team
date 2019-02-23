@@ -7,7 +7,7 @@
       />
       <section class="body">
         <div class="title">
-          <div class="category"><i :class="'icon-' + article.category.code" /> {{ article.category.name }}</div>
+          <div class="category"><i :class="'icon-' + category.code" /> {{ category.name }}</div>
           <h3>{{ translation.headline }}</h3>
           <p class="date">{{ published_at }}</p>
         </div>
@@ -24,12 +24,16 @@ export default {
   props: ['article'],
 
   computed: {
+    category () {
+      return this.$store.state.articleCategories[this.article.category_id]
+    },
+
     url () {
       return `/articles/${this.article.id}-${slug(this.translation.headline)}`
     },
 
     translation () {
-      return this.article.translations.find(t => t.language.code === 'fr')
+      return this.article.translations.find(t => t.code === 'fr')
     },
 
     thumbnail() {

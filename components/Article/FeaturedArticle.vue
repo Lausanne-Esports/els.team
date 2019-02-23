@@ -6,7 +6,7 @@
   >
     <nuxt-link :to="url">
       <div class="infos">
-        <p class="category mb-0"><i :class="`icon-${article.category.code}`" /> {{ article.category.name }}</p>
+        <p class="category mb-0"><i :class="`icon-${category.code}`" /> {{ category.name }}</p>
         <h2>{{ translation.headline }}</h2>
         <div href="#" class="read-more mb-0">Lire l'article <i class="icon-arrow-right" /></div>
       </div>
@@ -31,12 +31,16 @@ export default {
   },
 
   computed: {
+    category () {
+      return this.$store.state.articleCategories[this.article.category_id]
+    },
+
     url () {
       return `/articles/${this.article.id}-${slug(this.translation.headline)}`
     },
 
     translation () {
-      return this.article.translations.find(t => t.language.code === 'fr')
+      return this.article.translations.find(t => t.code === 'fr')
     },
 
     thumbnail() {

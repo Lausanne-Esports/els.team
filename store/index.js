@@ -1,9 +1,14 @@
 export const state = () => ({
+  currentUser: null,
   articleCategories: {},
   teamCategories: {},
 })
 
 export const mutations = {
+  SET_AUTHENTICATE_USER (state, user) {
+    state.currentUser = user
+  },
+
   SET_ARTICLE_CATEGORIES (state, categories) {
     state.articleCategories = categories.reduce((acc, curr) => {
       acc[curr.id] = { name: curr.name, code: curr.code }
@@ -22,9 +27,17 @@ export const mutations = {
 export const actions = {
   async nuxtServerInit ({ dispatch }) {
     await Promise.all([
+      dispatch('getCurrentUser'),
       dispatch('getArticleCategories'),
       dispatch('getTeamCategories')
     ])
+  },
+
+  async getCurrentUser ({ commit }) {
+    try {
+      const user = await this.$axios.$get('me')
+      commit('SET_AUTHENTICATE_USER', user)
+    } catch (e) {}
   },
 
   async getArticleCategories ({ commit }) {

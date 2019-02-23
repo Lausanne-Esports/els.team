@@ -50,6 +50,7 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/proxy',
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     ['@nuxtjs/google-analytics', { id: 'UA-96607341-1' }],
@@ -63,8 +64,11 @@ export default {
   ],
 
   axios: {
-    credentials: true,
-    proxyHeaders: false,
+    proxy: true,
+  },
+
+  proxy: {
+    '/api': { target: process.env.PROXY_API_URL, pathRewrite: {'^/api/': ''} },
   },
 
   // Build configuration
