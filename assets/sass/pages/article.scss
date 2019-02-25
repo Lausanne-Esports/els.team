@@ -179,12 +179,13 @@ article.single {
       &.left {
         float: left;
         margin-right: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
       }
 
       &.right {
         float: right;
         margin-left: 30px;
+        margin-bottom: 30px;
       }
 
       &.center {
