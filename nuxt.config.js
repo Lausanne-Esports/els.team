@@ -56,6 +56,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     ['@nuxtjs/google-analytics', { id: 'UA-96607341-1' }],
+    'nuxt-webfontloader',
   ],
 
   /*
@@ -71,6 +72,12 @@ export default {
 
   proxy: {
     '/api': { target: process.env.PROXY_API_URL, pathRewrite: {'^/api/': ''} },
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Barlow:400,400i,500,500i,700,700i'],
+    }
   },
 
   // Build configuration
