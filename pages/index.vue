@@ -117,6 +117,10 @@ export default {
   height: $lg-headlines-block-height;
 }
 
+.read-more {
+  color: #1f8cfe !important;
+}
+
 @media screen and (max-width: 768px) {
   #headlines-wrapper {
     margin-bottom: 0px;
