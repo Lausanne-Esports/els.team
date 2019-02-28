@@ -1,14 +1,27 @@
 <template>
   <div>
-    <mobile-menu :open="mobileMenuOpenStatus" @close="toggleMenu"></mobile-menu>
-    <main-header :compact="true" @toggle-mobile-menu="toggleMenu"></main-header>
+    <LazyHydrate when-idle>
+      <mobile-menu :open="mobileMenuOpenStatus" @close="toggleMenu"></mobile-menu>
+    </LazyHydrate>
+
+    <LazyHydrate when-idle>
+      <main-header :compact="true" @toggle-mobile-menu="toggleMenu"></main-header>
+    </LazyHydrate>
+
     <nuxt />
-    <main-footer></main-footer>
-    <copyright-block></copyright-block>
+
+    <LazyHydrate when-visible>
+      <main-footer></main-footer>
+    </LazyHydrate>
+
+    <LazyHydrate ssr-only>
+      <copyright-block></copyright-block>
+    </LazyHydrate>
   </div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
 import MainHeader from '@/components/Layout/MainHeader'
 import MainFooter from '@/components/Layout/MainFooter'
 import MobileMenu from '@/components/Navigations/MobileMenu'
@@ -20,6 +33,7 @@ export default {
     MainFooter,
     MainHeader,
     MobileMenu,
+    LazyHydrate,
   },
 
   data: () => ({

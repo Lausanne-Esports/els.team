@@ -1,15 +1,31 @@
 <template>
   <div>
-    <mobile-menu :open="mobileMenuOpenStatus" @close="toggleMenu"></mobile-menu>
-    <main-header @toggle-mobile-menu="toggleMenu"></main-header>
+    <LazyHydrate when-idle>
+      <mobile-menu :open="mobileMenuOpenStatus" @close="toggleMenu"></mobile-menu>
+    </LazyHydrate>
+
+    <LazyHydrate when-idle>
+      <main-header @toggle-mobile-menu="toggleMenu"></main-header>
+    </LazyHydrate>
+
     <nuxt />
-    <sponsor-block></sponsor-block>
-    <main-footer></main-footer>
-    <copyright-block></copyright-block>
+
+    <LazyHydrate when-visible>
+      <sponsor-block></sponsor-block>
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <main-footer></main-footer>
+    </LazyHydrate>
+
+    <LazyHydrate ssr-only>
+      <copyright-block></copyright-block>
+    </LazyHydrate>
   </div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
 import MainHeader from '@/components/Layout/MainHeader'
 import MainFooter from '@/components/Layout/MainFooter'
 import MobileMenu from '@/components/Navigations/MobileMenu'
@@ -23,6 +39,7 @@ export default {
     MainHeader,
     MobileMenu,
     SponsorBlock,
+    LazyHydrate,
   },
 
   data: () => ({
