@@ -21,10 +21,12 @@ export default {
       { rel: 'preconnect', href: 'https://api.els.team' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://platform.twitter.com' },
+      { rel: 'preconnect', href: 'https://polyfill.io' },
       { rel: 'dns-prefetch', href: 'https://els.team' },
       { rel: 'dns-prefetch', href: 'https://api.els.team' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       { rel: 'dns-prefetch', href: 'https://platform.twitter.com' },
+      { rel: 'dns-prefetch', href: 'https://polyfill.io' },
     ],
     script: [
       { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver' },
