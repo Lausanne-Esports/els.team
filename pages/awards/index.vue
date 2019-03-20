@@ -38,6 +38,24 @@ export default {
       code: 'hs',
       awards: [
         {
+          result: 1,
+          name: 'KFStone #8',
+          lineup: 'Bozo',
+          year: 2019
+        },
+        {
+          result: 3,
+          name: 'KFStone #8',
+          lineup: 'Dokhan',
+          year: 2019
+        },
+        {
+          result: 3,
+          name: 'ArmaCup All-Stars',
+          lineup: 'Hypno',
+          year: 2019
+        },
+        {
           result: 3,
           name: 'HCT Oslo',
           lineup: 'Hypno',
@@ -199,6 +217,12 @@ export default {
       name: 'League of Legends',
       code: 'lol',
       awards: [
+        {
+          result: 1,
+          name: 'SESL Winter Season',
+          lineup: 'eLS.Indigo',
+          year: 2019
+        },
         {
           result: 3,
           name: 'SESL Fall Season',
@@ -434,6 +458,12 @@ export default {
       code: 'rl',
       awards: [
         {
+          result: 1,
+          name: 'SESL Winter Season',
+          lineup: 'eLS.Aurora',
+          year: 2019
+        },
+        {
           result: 3,
           name: 'TCS Esports League',
           lineup: 'eLS.Aurora',
@@ -507,6 +537,12 @@ export default {
       awards: [
         {
           result: 2,
+          name: 'SFCO #4',
+          lineup: 'AimNight',
+          year: 2019
+        },
+        {
+          result: 2,
           name: 'SFCO 2vs2 #2',
           lineup: 'AimNight & Mathieu',
           year: '2018'
@@ -553,6 +589,12 @@ export default {
       name: 'Super Smash Bros',
       code: 'smash',
       awards: [
+        {
+          result: 2,
+          name: 'UltiMelt #10',
+          lineup: 'MonkeySike',
+          year: 2019
+        },
         {
           result: 2,
           name: 'Japan Impact Sunday\'s Tournament',
