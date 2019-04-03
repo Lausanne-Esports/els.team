@@ -10,7 +10,7 @@
       </div>
     </header>
     <div class="container body">
-      <categories-filter :categories="categories" @categoryChanged="selectCategory"></categories-filter>
+      <categories-filter :categories="$store.state.articleCategories" @categoryChanged="selectCategory"></categories-filter>
 
       <div class="row articles">
         <article-card
@@ -48,7 +48,7 @@ export default {
 
   async asyncData ({ query, error, $axios }) {
     try {
-      const articles = await $axios.$get('/articles/categories')
+      const articles = await $axios.$get('/articles')
 
       return { articles }
     } catch(e) {}
@@ -61,7 +61,7 @@ export default {
       }
 
       return this.articles.filter(article => (
-        this.$store.state.articleCategories(article.category_id).code === this.selectedCategory.code
+        this.$store.state.articleCategories[article.category_id].code === this.selectedCategory.code
       ))
     }
   },
