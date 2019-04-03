@@ -26,14 +26,14 @@ export default {
       { rel: 'dns-prefetch', href: 'https://api.els.team' },
       { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
       { rel: 'dns-prefetch', href: 'https://platform.twitter.com' },
-      { rel: 'dns-prefetch', href: 'https://polyfill.io' },
-    ],
-    script: [
-      { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver' },
     ],
   },
 
   modern: true,
+
+  router: {
+    prefetchLinks: false,
+  },
 
   // Customize the progress bar color
   loading: { color: '#384168' },
