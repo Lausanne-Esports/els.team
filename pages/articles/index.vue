@@ -65,7 +65,7 @@ export default {
       }
 
       return this.articles.filter(article => (
-        article.category.code === this.selectedCategory.code
+        this.$store.state.articleCategories(article.category_id).code === this.selectedCategory.code
       ))
     }
   },
