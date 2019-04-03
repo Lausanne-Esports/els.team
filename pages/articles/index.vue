@@ -48,14 +48,10 @@ export default {
 
   async asyncData ({ query, error, $axios }) {
     try {
-      const [articles, categories] = await Promise.all([
-        $axios.$get('/articles'),
-        $axios.$get('/articles/categories'),
-      ])
+      const articles = await $axios.$get('/articles/categories')
 
-      return { articles, categories }
-    } catch(e) {
-    }
+      return { articles }
+    } catch(e) {}
   },
 
   computed: {
