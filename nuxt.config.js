@@ -1,7 +1,11 @@
 require('dotenv').config()
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 export default {
-  // Headers of the page
+  mode: 'universal',
+  modern: isProduction,
+
   head: {
     title: 'Lausanne eSports',
     meta: [
@@ -28,8 +32,6 @@ export default {
       { rel: 'dns-prefetch', href: 'https://platform.twitter.com' },
     ],
   },
-
-  modern: true,
 
   router: {
     prefetchLinks: false,
@@ -84,6 +86,10 @@ export default {
 
   // Build configuration
   build: {
+    cache: !isProduction,
+    hardSource: !isProduction,
+    parallel: !isProduction,
+
     extractCSS: true,
 
     optimization: {
