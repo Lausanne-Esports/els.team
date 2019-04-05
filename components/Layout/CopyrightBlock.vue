@@ -6,20 +6,5 @@
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-  @import '~assets/sass/core/variables.scss';
 
-  .copyright {
-    p, a {
-      font-size: 12px;
-      color: #a5a5a5;
-      margin-bottom: 0px;
-    }
-
-    .els {
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
-</style>
 

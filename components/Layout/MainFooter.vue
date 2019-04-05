@@ -35,14 +35,3 @@
     </div>
   </footer>
 </template>
-
-<style scoped>
-  a {
-    color: #a5a5a5 !important;
-  }
-
-  .els {
-    color: #1f8cfe !important;
-  }
-</style>
-

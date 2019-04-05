@@ -33,9 +33,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-@import '~assets/sass/core/variables.scss';
-@import '~assets/sass/components/stream-card.scss';
-</style>
-

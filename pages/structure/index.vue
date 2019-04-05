@@ -47,8 +47,3 @@ export default {
   }),
 }
 </script>
-
-<style lang="scss">
-  @import '~assets/sass/pages/page.scss';
-  @import '~assets/sass/components/lineup-card.scss';
-</style>

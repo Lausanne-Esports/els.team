@@ -6,6 +6,8 @@ export default {
   mode: 'universal',
   modern: isProduction,
 
+  css: ['~/assets/css/app.css'],
+
   head: {
     title: 'Lausanne eSports',
     meta: [
@@ -37,7 +39,6 @@ export default {
     prefetchLinks: false,
   },
 
-  // Customize the progress bar color
   loading: { color: '#384168' },
 
   meta: {
@@ -51,9 +52,6 @@ export default {
     short_name: 'eLS Website',
   },
 
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     '@nuxtjs/pwa',
     '@nuxtjs/proxy',
@@ -63,9 +61,6 @@ export default {
     'nuxt-webfontloader',
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
     { src: '~/plugins/lazyload.js', ssr: false },
   ],
@@ -84,30 +79,21 @@ export default {
     }
   },
 
-  // Build configuration
   build: {
     cache: !isProduction,
     hardSource: !isProduction,
     parallel: !isProduction,
 
-    extractCSS: true,
-
-    optimization: {
-      splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: 'styles',
-            test: /\.(css|vue)$/,
-            chunks: 'all',
-            enforce: true
-          },
-        },
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        'tailwindcss': {},
+        'autoprefixer': {},
       },
     },
 
-    // Run ESLint on save
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+      if (isClient && isDev && config.module) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,

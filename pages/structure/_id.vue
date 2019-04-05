@@ -58,9 +58,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-  @import '~assets/sass/pages/page.scss';
-  @import '~assets/sass/components/player-card.scss';
-</style>
-

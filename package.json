@@ -28,13 +28,13 @@
     "vuex": "^3.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "babel-eslint": "^10.0.1",
-    "bootstrap": "^4.3.1",
     "eslint": "^5.14.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.0.0-beta.4"
   }
 }

@@ -98,38 +98,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@import '~assets/sass/core/variables.scss';
-
-#headlines-wrapper {
-  padding-top: 290px;
-  position: relative;
-}
-
-.headlines {
-  position: absolute;
-  top: -250px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  height: $lg-headlines-block-height;
-}
-
-.read-more {
-  color: #1f8cfe !important;
-}
-
-@media screen and (max-width: 768px) {
-  #headlines-wrapper {
-    margin-bottom: 0px;
-    padding: 80px;
-  }
-
-  .headlines {
-    top: -120px;
-    height: $sm-headlines-block-height;
-  }
-}
-</style>

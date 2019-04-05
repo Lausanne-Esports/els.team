@@ -56,7 +56,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-  @import '~assets/sass/pages/page.scss';
-</style>
