@@ -21,12 +21,12 @@
         </nav>
         <div class="socials">
           <h4>Réseaux sociaux</h4>
-          <a href="https://www.facebook.com/lausanneesports" target="blank" aria-label="Page Facebook du Lausanne eSports"><i class="icon-facebook" /> Facebook</a>
-          <a href="https://twitter.com/lausanneesports" target="blank" aria-label="Page Twitter du Lausanne eSports"><i class="icon-twitter" /> Twitter</a>
-          <a href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank" aria-label="Chaîne Youtube du Lausanne eSports"><i class="icon-youtube" /> Youtube</a>
-          <a href="https://www.twitch.tv/lausannetv" target="blank" aria-label="Chaîne Twitch du Lausanne eSports"><i class="icon-twitch" /> Twitch</a>
-          <a href="https://discord.gg/RZPDWSe" target="blank" aria-label="Serveur Discord du Lausanne eSports"><i class="icon-discord" /> Discord</a>
-          <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank" aria-label="Groupe Steam du Lausanne eSports"><i class="icon-steam" /> Steam</a>
+          <a href="https://www.facebook.com/lausanneesports" target="blank" aria-label="Page Facebook du Lausanne Esports"><i class="icon-facebook" /> Facebook</a>
+          <a href="https://twitter.com/lausanneesports" target="blank" aria-label="Page Twitter du Lausanne Esports"><i class="icon-twitter" /> Twitter</a>
+          <a href="https://www.youtube.com/channel/UCt0kuaKzKcuWH8AnMzkvRFg" target="blank" aria-label="Chaîne Youtube du Lausanne Esports"><i class="icon-youtube" /> Youtube</a>
+          <a href="https://www.twitch.tv/lausannetv" target="blank" aria-label="Chaîne Twitch du Lausanne Esports"><i class="icon-twitch" /> Twitch</a>
+          <a href="https://discord.gg/RZPDWSe" target="blank" aria-label="Serveur Discord du Lausanne Esports"><i class="icon-discord" /> Discord</a>
+          <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank" aria-label="Groupe Steam du Lausanne Esports"><i class="icon-steam" /> Steam</a>
         </div>
         <div class="sesf align-md-self-end">
           <img v-lazy="'/images/sesf.png'" alt="Swiss Esports Federation Logo">

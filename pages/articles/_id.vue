@@ -47,17 +47,17 @@ export default {
 
   head () {
     return {
-      title: `${this.article.headline} | Lausanne eSports`,
+      title: `${this.article.headline} | Lausanne Esports`,
       meta: [
-        { hid: 'og:title', property: 'og:title', content: `${this.article.headline} | Lausanne eSports` },
-        { hid: 'og:name', property: 'og:name', content: `${this.article.headline} | Lausanne eSports` },
+        { hid: 'og:title', property: 'og:title', content: `${this.article.headline} | Lausanne Esports` },
+        { hid: 'og:name', property: 'og:name', content: `${this.article.headline} | Lausanne Esports` },
         { hid: 'og:description', property: 'og:description', content: this.article.description },
         { hid: 'og:image', property: 'og:image', content: this.article.featured_thumbnail },
         { hid: 'og:type', property: 'og:type', content: 'article' },
         { hid: 'og:url', property: 'og:url', content: this.$route.path },
         { hid: 'description', name: 'description', content: this.article.description },
         { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
-        { hid: 'twitter:title', name: 'twitter:title', content: `${this.article.headline} | Lausanne eSports` },
+        { hid: 'twitter:title', name: 'twitter:title', content: `${this.article.headline} | Lausanne Esports` },
         { hid: 'twitter:site', name: 'twitter:site', content: '@lausanneesports' },
         { hid: 'twitter:creator', name: 'twitter:creator', content: '@lausanneesports' },
         { hid: 'twitter:description', name: 'twitter:description', content: this.article.description },

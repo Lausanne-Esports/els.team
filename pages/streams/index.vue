@@ -41,7 +41,7 @@ export default {
   }),
 
   head: () => ({
-    title: 'Live | Lausanne eSports',
+    title: 'Live | Lausanne Esports',
     meta: [
       { hid: 'description', name: 'description', content: 'Liste des lives' },
     ],

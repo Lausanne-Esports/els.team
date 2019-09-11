@@ -618,9 +618,9 @@ export default {
   ]}),
 
   head: () => ({
-    title: 'Palmarès | Lausanne eSports',
+    title: 'Palmarès | Lausanne Esports',
     meta: [
-      { hid: 'description', name: 'description', content: 'Palmarès du Lausanne eSports' },
+      { hid: 'description', name: 'description', content: 'Palmarès du Lausanne Esports' },
     ],
   }),
 }

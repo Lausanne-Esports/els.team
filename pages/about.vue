@@ -7,14 +7,14 @@
       />
       <div class="container">
         <h1>A propos</h1>
-        <p class="sub-title">Qu'est-ce que le Lausanne-Sport eSports ?</p>
+        <p class="sub-title">Qu'est-ce que le Lausanne-Sport Esports ?</p>
       </div>
     </header>
 
     <div class="container body">
       <p>Le Lausanne-Sport eSports est <strong>l'équipe Esportive officielle du club de football phare de Lausanne</strong> (en Suisse), nous avons pour ambition de remporter les tournois suisses et européens ainsi que de <strong>développer le monde du sport éléctronique</strong>.</p>
 
-      <p>Historiquement nommé Qualitas Helvetica, l’équipe décide de s’allier avec un partenaire de qualité en concluant une fusion avec le Lausanne-Sport, et deviendra le Lausanne-Sport esports. C’est officiellement le 6 avril 2017 que l’annonce de création du Lausanne-Sport esports est faite aux médias et à la communauté gaming, après plusieurs mois de travail qui ont été nécessaire pour préparer au mieux cette incroyable aventure.</p>
+      <p>Historiquement nommé Qualitas Helvetica, l’équipe décide de s’allier avec un partenaire de qualité en concluant une fusion avec le Lausanne-Sport, et deviendra le Lausanne-Sport Esports. C’est officiellement le 6 avril 2017 que l’annonce de création du Lausanne-Sport esports est faite aux médias et à la communauté gaming, après plusieurs mois de travail qui ont été nécessaire pour préparer au mieux cette incroyable aventure.</p>
 
       <p>Lors de notre premier tournoi sous les couleurs du club, Polylan 27 , nous nous illustreront avec deux titres de champions et un de vice-champion. Suivant cette voie pendant nos deux premières années - <strong>nous comptabilisons un total de 68 trophées sur 6 jeux</strong>, ainsi que 6 résultats en tournois européens ou de prestige.</p>
 
@@ -46,9 +46,9 @@ export default {
   scrollToTop: true,
 
   head: () => ({
-    title: 'A Propos | Lausanne eSports',
+    title: 'A Propos | Lausanne Esports',
     meta: [
-      { hid: 'description', name: 'description', content: `Qu'est-ce que le Lausanne-Sport eSports ?` }
+      { hid: 'description', name: 'description', content: `Qu'est-ce que le Lausanne-Sport Esports ?` }
     ],
   }),
 }

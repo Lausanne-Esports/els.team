@@ -40,9 +40,9 @@ export default {
   },
 
   head: () => ({
-    title: 'Structure | Lausanne eSports',
+    title: 'Structure | Lausanne Esports',
     meta: [
-      { hid: 'description', name: 'description', content: 'Structure du Lausanne eSports' },
+      { hid: 'description', name: 'description', content: 'Structure du Lausanne Esports' },
     ],
   }),
 }

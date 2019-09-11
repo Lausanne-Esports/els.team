@@ -71,7 +71,7 @@ export default {
 
   head () {
     return {
-      title: `Live ${this.stream.display_name} | Lausanne eSports`,
+      title: `Live ${this.stream.display_name} | Lausanne Esports`,
       meta: [
         { hid: 'description', name: 'description', content: `${this.stream.display_name} live stream` },
       ],

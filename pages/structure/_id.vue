@@ -44,7 +44,7 @@ export default {
 
   head () {
     return {
-      title: `${this.team.name} | Lausanne eSports`,
+      title: `${this.team.name} | Lausanne Esports`,
       meta: [
         { hid: 'description', name: 'description', content: `Page de l'équipe ${this.team.name}` },
       ],
