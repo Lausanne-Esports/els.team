@@ -1,11 +1,9 @@
 <template>
   <div class="player-card">
-    <div
-      class="picture"
-      v-lazy:background-image="'/images/players/background_player.jpg'"
-    >
+    <div class="picture" v-lazy:background-image="'/images/players/background_player.jpg'">
       <img v-lazy="picture" :alt="fullname" />
     </div>
+    <div v-if="player.academy" class="academy">Académie</div>
     <div class="body">
       <label>Nom / Pseudo</label>
       <div class="fullname">{{ fullname }}</div>
@@ -20,7 +18,9 @@
           target="_blank"
           rel="nofollow"
           :aria-label="`${social.type} pour ${fullname}`"
-        ><i :class="'icon-' + social.type"></i></a>
+        >
+          <i :class="'icon-' + social.type"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -28,20 +28,21 @@
 
 <script>
 export default {
-  props: ['player'],
+  props: ["player"],
 
   computed: {
-    fullname () {
-      return `${this.player.firstname || ''} ${this.player.lastname || ''}`.trim()
+    fullname() {
+      return `${this.player.firstname || ""} ${this.player.lastname ||
+        ""}`.trim();
     },
 
-    picture () {
+    picture() {
       if (this.player.picture) {
-        return this.player.picture
+        return this.player.picture;
       }
 
-      return '/images/players/default.png'
+      return "/images/players/default.png";
     }
-  },
-}
+  }
+};
 </script>
