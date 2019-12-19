@@ -28,9 +28,6 @@
           <a href="https://discord.gg/RZPDWSe" target="blank" aria-label="Serveur Discord du Lausanne Esports"><i class="icon-discord" /> Discord</a>
           <a href="https://steamcommunity.com/groups/lausanne_esports" target="blank" aria-label="Groupe Steam du Lausanne Esports"><i class="icon-steam" /> Steam</a>
         </div>
-        <div class="sesf align-md-self-end">
-          <img v-lazy="'/images/sesf.png'" alt="Swiss Esports Federation Logo">
-        </div>
       </div>
     </div>
   </footer>
