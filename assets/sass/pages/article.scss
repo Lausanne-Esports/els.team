@@ -272,6 +272,10 @@ article.single {
     }
 
     .body {
+      h3 {
+        text-align: left;
+      }
+      
       figure {
         &.left, &.right, &.center {
           float: none;
