@@ -44,11 +44,22 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .categories-filter {
+    justify-content: flex-start;
     height: 80px;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+
+    a {
+      &:first-child {
+        min-width: auto;
+      }
+
+      &:last-child {
+        padding: 0 20px 0 0;
+      }
+    }
   }
 }
