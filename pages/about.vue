@@ -16,11 +16,11 @@
 
       <p>Historiquement nommé Qualitas Helvetica, l’équipe décide de s’allier avec un partenaire de qualité en concluant une fusion avec le Lausanne-Sport, et deviendra le Lausanne-Sport Esports. C’est officiellement le 6 avril 2017 que l’annonce de création du Lausanne-Sport esports est faite aux médias et à la communauté gaming, après plusieurs mois de travail qui ont été nécessaire pour préparer au mieux cette incroyable aventure.</p>
 
-      <p>Lors de notre premier tournoi sous les couleurs du club, Polylan 27 , nous nous illustreront avec deux titres de champions et un de vice-champion. Suivant cette voie pendant nos deux premières années - <strong>nous comptabilisons un total de 68 trophées sur 6 jeux</strong>, ainsi que 6 résultats en tournois européens ou de prestige.</p>
+      <p>Lors de notre premier tournoi sous les couleurs du club, Polylan 29 , nous nous illustreront avec deux titres de champions et un de vice-champion. Suivant cette voie pendant nos deux premières années - <strong>nous comptabilisons un total de 68 trophées sur 6 jeux</strong>, ainsi que 6 résultats en tournois européens ou de prestige.</p>
 
       <figure class="wild">
-        <img v-lazy="`https://i.imgur.com/Ge0FVPf.jpg`" alt="">
-        <figcaption>L'équipe Overwatch Pachimari gagnant la Polylan 27</figcaption>
+        <img v-lazy="`https://i.imgur.com/Ge0FVPf.jpg`" alt="Polylan 29">
+        <figcaption>L'équipe Overwatch Pachimari gagnant la Polylan 29</figcaption>
       </figure>
 
       <p>
