@@ -89,11 +89,11 @@ export default {
 
   computed: {
     playerUrl () {
-      return `https://player.twitch.tv/?channel=${this.stream.username}&muted=false`
+      return `https://player.twitch.tv/?channel=${this.stream.username}&muted=false&parent=els.team`
     },
 
     chatUrl () {
-      return `https://www.twitch.tv/embed/${this.stream.username}/chat?darkpopout`
+      return `https://www.twitch.tv/embed/${this.stream.username}/chat?darkpopout&parent=els.team`
     },
 
     subUrl () {
