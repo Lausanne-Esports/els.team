@@ -4,7 +4,7 @@
       <div :class="`lineup-card staff`">
         <div class="bg-image"></div>
         <div class="body">
-          <div class="players">{{ staff.numberOfPlayers }} joueurs</div>
+          <div class="players">{{ nbPlayers }}</div>
           <h2>{{ staff.name }}</h2>
           <p class="read-more">En savoir plus <i class="icon-arrow-right" /></p>
         </div>
@@ -23,6 +23,9 @@ export default {
     sluggifiedName () {
       return slug(this.staff.name)
     },
+    nbPlayers () {
+      return `${this.staff.numberOfPlayers} joueur${this.staff.numberOfPlayers > 1 ? "s" : ""}`
+    }
   },
 }
 </script>
