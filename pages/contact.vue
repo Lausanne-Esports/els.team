@@ -59,7 +59,7 @@ export default {
   methods: {
     async sendEmail () {
       try {
-        this.$axios.$post('contact', this.form)
+        await this.$axios.$post('contact', this.form)
         this.form = { title: null, email: null, message: null }
         swal({ text: 'Votre message a été envoyé !', icon: 'success' })
       } catch (e) {
