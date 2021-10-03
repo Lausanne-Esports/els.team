@@ -11,7 +11,7 @@
     <nuxt />
 
     <LazyHydrate when-visible>
-      <sponsor-block></sponsor-block>
+      <partner-block></partner-block>
     </LazyHydrate>
 
     <LazyHydrate when-visible>
@@ -30,7 +30,7 @@ import MainHeader from '@/components/Layout/MainHeader'
 import MainFooter from '@/components/Layout/MainFooter'
 import MobileMenu from '@/components/Navigations/MobileMenu'
 import CopyrightBlock from '@/components/Layout/CopyrightBlock'
-import SponsorBlock from '@/components/Layout/SponsorBlock'
+import PartnerBlock from '@/components/Layout/PartnerBlock'
 
 export default {
   components: {
@@ -38,7 +38,7 @@ export default {
     MainFooter,
     MainHeader,
     MobileMenu,
-    SponsorBlock,
+    PartnerBlock,
     LazyHydrate,
   },
 
