@@ -36,7 +36,7 @@
     "eslint-loader": "^3.0.4",
     "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^5.0.0",
-    "sass": "^1.42.1",
+    "sass": "1.32.*",
     "sass-loader": "^10.1.0"
   },
   "volta": {
