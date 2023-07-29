@@ -3,7 +3,6 @@
     <div class="partners container">
       <div>
         <a href="https://www.andros.ch/" target="blank" class="main"><img v-lazy="'/images/partners/andros.svg'" alt="Andros"></a>
-        <a href="https://www.casinosbarriere.com/fr/montreux.html" target="blank" class="main"><img v-lazy="'/images/partners/barriere.svg'" alt="Casino Barrière"></a><br />
       </div>
     </div>
   </section>
@@ -43,4 +42,3 @@
     }
   }
 </style>
-

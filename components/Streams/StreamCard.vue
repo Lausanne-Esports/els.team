@@ -9,13 +9,9 @@
         <div class="viewers">{{ stream.viewers }}</div>
       </div>
       <section class="body">
-        <div class="logo"
-          v-if="stream.is_live"
-          v-lazy:background-image="stream.logo"
-        />
         <div class="title">
           <div class="username">{{ stream.username }}</div>
-          <h3 v-if="stream.is_live">{{ stream.status }}</h3>
+          <h3 v-if="stream.is_live">{{ stream.game }}</h3>
         </div>
       </section>
     </nuxt-link>
