@@ -7,7 +7,7 @@
       />
       <div class="container">
         <h1>{{ stream.display_name }}</h1>
-        <p class="sub-title">{{ stream.status }}</p>
+        <p class="sub-title">{{ stream.game }}</p>
       </div>
     </header>
     <section class="wrapper light pt-5 pb-5">
